@@ -89,7 +89,9 @@ export const Contact = () => {
             />
           </div>
 
-          <button type="submit">Yuborish</button>
+          <button className="contact_btn" type="submit">
+            Yuborish
+          </button>
         </form>
       </div>
       <div

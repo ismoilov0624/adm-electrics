@@ -61,10 +61,4 @@ export const newsData = [
       "Kia Sonet – SUV-B toifasida yilning ulkan yutug‘i: Kia ikkita mukofotni qo‘lga kiritib, TAF!24da yetakchilikni mustahkamladi",
     text: "2024-yil 12-oktabr kuni har yili o‘tkaziladigan TAF!24 Toshkent reklama festivalida Kia brendi bozordagi barqaror o‘rni va yuqori sifat standartlariga sodiqligini tasdiqlovchi ikkita muhim mukofotga sazovor bo‘ldi.",
   },
-  {
-    id: 8,
-    img: news5,
-    title: "yangi",
-    text: "2024-yil 12-oktabr kuni har yili o‘tkaziladigan TAF!24 Toshkent reklama festivalida Kia brendi bozordagi barqaror o‘rni va yuqori sifat standartlariga sodiqligini tasdiqlovchi ikkita muhim mukofotga sazovor bo‘ldi.",
-  },
 ];

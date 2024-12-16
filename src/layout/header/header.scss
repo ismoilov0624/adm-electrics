@@ -26,17 +26,12 @@
     }
   }
 
-  @media (max-width: 1315px) {
+  @media (max-width: 1120px) {
     &__nav {
       display: none;
     }
   }
 
-  @media (max-width: 930px) {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
   @media (max-width: 768px) {
     &__nav {
       gap: 15px;
@@ -68,4 +63,49 @@
 
 .anticon svg {
   display: none;
+}
+
+.menu-container {
+  @media (min-width: 1120px) {
+    display: none;
+  }
+
+  .menu-button {
+    padding: 0.5rem;
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: flex-end;
+
+    .close-button {
+      font-size: 1.25rem;
+    }
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+
+    .menu-item {
+      font-family: "Inter", sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: color 0.3s ease-in-out;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          color: var(
+            --primary-color
+          ); // Replace with your primary color variable or value
+        }
+      }
+    }
+  }
 }

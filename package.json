@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.5.1",
+    "@headlessui/react": "^2.2.0",
     "ant": "^0.2.0",
     "antd": "^5.22.1",
     "aos": "^2.3.4",
