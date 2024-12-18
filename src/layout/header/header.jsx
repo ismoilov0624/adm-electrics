@@ -92,32 +92,27 @@ export const Header = () => {
           </div>
           <ul className="menu-list">
             <li className="menu-item">
-              <Link onClick={close} className="header__link" to="/">
+              <Link onClick={close} to="/">
                 Bosh sahifa
               </Link>
             </li>
             <li className="menu-item">
-              <Link onClick={close} className="header__link" to="/about">
+              <Link onClick={close} to="/about">
                 Kompaniya haqida
               </Link>
             </li>
             <li className="menu-item">
-              <Link
-                onClick={close}
-                className="header__link"
-                to="/company_structure"
-              >
+              <Link onClick={close} to="/company_structure">
                 Korxona boshqaruvi
               </Link>
             </li>
             <li className="menu-item">
-              <Link onClick={close} className="header__link" to="/news">
+              <Link onClick={close} to="/news">
                 Yangiliklar
               </Link>
             </li>
             <li className="menu-item">
               <a
-                className="header__link"
                 href="https://jobs.adm.uz/vacancies?company=4"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -126,7 +121,7 @@ export const Header = () => {
               </a>
             </li>
             <li className="menu-item">
-              <Link onClick={close} className="header__link" to="/contact">
+              <Link onClick={close} to="/contact">
                 Kontaktlar
               </Link>
             </li>
