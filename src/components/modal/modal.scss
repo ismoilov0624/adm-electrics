@@ -8,11 +8,11 @@
     display: flex;
     justify-content: flex-end;
     width: 100vw;
-    background-color: rgba(84, 81, 81, 0.14); // #54515124 in Tailwind
+    background-color: rgba(84, 81, 81, 0.14);
   }
 
   .modal-panel {
-    border-radius: 0.5rem; // Equivalent to `rounded` in Tailwind
+    border-radius: 0.5rem;
     background-color: white;
     padding: 30px;
     width: 350px;

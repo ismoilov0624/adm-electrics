@@ -67,14 +67,13 @@ export const Footer = () => {
               <Link to="/about">Kompaniya haqida</Link>
             </li>
             <li>
-              <Link to="/company_structure">Tashkiliy tuzilma</Link>
+              <Link to="/company_structure">Korxona boshqaruvi</Link>
             </li>
             <li>
               <Link to="/news">Yangiliklar</Link>
             </li>
             <li>
               <a
-                className="header__link"
                 href="https://jobs.adm.uz/vacancies?company=4"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -2,12 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./header.scss";
 import logo from "../../assets/images/home/logo.png";
-import { useModal } from "../../hooks/useModal"; // Corrected import path.
+import { useModal } from "../../hooks/useModal";
 import { Modal } from "../../components/modal/modal";
-import { BurgerMenu } from "../../assets/icons/footer/burger-menu";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 import { DownOutlined } from "@ant-design/icons";
 import { Dropdown, Space } from "antd";
+
 const items = [
   {
     label: (
@@ -20,7 +22,7 @@ const items = [
   {
     label: (
       <a className="dropdown__link" href="/company_structure">
-        Tashkiliy tuzilma
+        Korxona boshqaruvi
       </a>
     ),
     key: "1",
@@ -34,6 +36,7 @@ const items = [
     key: "2",
   },
 ];
+
 export const Header = () => {
   const { close, isOpen, open } = useModal();
   return (
@@ -71,40 +74,41 @@ export const Header = () => {
         <Link className="header__link" to="/contact">
           Kontaktlar
         </Link>
-        {/* <a className="header__link" href="tel:+998552020005">
-          +998 55 202 00 05
-        </a> */}
       </nav>
 
       <div className="menu-container">
         <button onClick={open} className="menu-button">
-          =
+          <FontAwesomeIcon icon={faBars} />
         </button>
 
         <Modal close={close} isOpen={isOpen}>
           <div className="modal-header">
             <button onClick={close} className="close-button">
-              x
+              <FontAwesomeIcon icon={faTimes} />
             </button>
           </div>
           <ul className="menu-list">
             <li className="menu-item">
-              <Link className="header__link" to="/">
+              <Link onClick={close} className="header__link" to="/">
                 Bosh sahifa
               </Link>
             </li>
             <li className="menu-item">
-              <Link className="header__link" to="/about">
+              <Link onClick={close} className="header__link" to="/about">
                 Kompaniya haqida
               </Link>
             </li>
             <li className="menu-item">
-              <Link className="header__link" to="/company_structure">
-                Tashkiliy tuzilma
+              <Link
+                onClick={close}
+                className="header__link"
+                to="/company_structure"
+              >
+                Korxona boshqaruvi
               </Link>
             </li>
             <li className="menu-item">
-              <Link className="header__link" to="/news">
+              <Link onClick={close} className="header__link" to="/news">
                 Yangiliklar
               </Link>
             </li>
@@ -119,7 +123,7 @@ export const Header = () => {
               </a>
             </li>
             <li className="menu-item">
-              <Link className="header__link" to="/contact">
+              <Link onClick={close} className="header__link" to="/contact">
                 Kontaktlar
               </Link>
             </li>

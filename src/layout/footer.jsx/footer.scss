@@ -102,6 +102,10 @@
   &__content {
     max-width: 1200px;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+      padding: 0 30px;
+    }
   }
 
   &__text {
@@ -109,6 +113,10 @@
     line-height: 1.5;
     color: #fff;
     text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 }
 

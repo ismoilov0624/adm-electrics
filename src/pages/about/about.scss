@@ -66,6 +66,10 @@
 }
 
 @media (max-width: 1200px) {
+  .goals {
+    gap: 0px;
+  }
+
   .overwiev__wrapper {
     display: flex;
     flex-direction: column !important;
@@ -101,6 +105,7 @@
   }
 
   .goals__list {
+    width: 100%;
     gap: 32px;
   }
 
@@ -111,7 +116,8 @@
 
 @media (max-width: 1024px) {
   .goals {
-    padding: 48px 32px;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
   }
 }
 
@@ -126,12 +132,20 @@
   font-weight: 700;
   line-height: 20px;
   color: #2c3e50;
+
+  @media (max-width: 500px) {
+    font-size: 24px;
+  }
 }
 
 .goals__text {
   font-size: 18px;
   color: #666;
   font-family: "Roboto", sans-serif;
+  @media (max-width: 500px) {
+    text-align: justify;
+    font-size: 16px;
+  }
 }
 
 .goals__list {
