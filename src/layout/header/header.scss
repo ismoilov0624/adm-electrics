@@ -43,6 +43,11 @@
       max-width: 250px;
     }
   }
+  @media (max-width: 500px) {
+    .logo {
+      max-width: 200px;
+    }
+  }
 
   @media (max-width: 480px) {
     &__nav {
@@ -69,42 +74,69 @@
   @media (min-width: 1120px) {
     display: none;
   }
+}
 
-  .menu-button {
-    padding: 0.5rem;
+.menu-button {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.modal-header {
+  margin-top: 7px;
+  display: flex;
+  justify-content: flex-end;
+
+  .close-button {
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
+}
 
-  .modal-header {
-    display: flex;
-    justify-content: flex-end;
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
-    .close-button {
-      font-size: 1.25rem;
+.menu-item {
+  font-size: 32px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.header__socials {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  gap: 1rem;
+  margin-top: 20px;
+
+  .header__badge {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    padding: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      background-color: #fc3e04;
     }
-  }
 
-  .menu-list {
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-
-    .menu-item {
-      font-family: "Inter", sans-serif;
-      font-size: 1rem;
-      font-weight: 500;
-      transition: color 0.3s ease-in-out;
-      cursor: pointer;
-
-      a {
-        text-decoration: none;
-
-        &:hover {
-          color: var(--primary-color);
-        }
-      }
+    img {
+      max-width: 100%;
+      height: auto;
     }
   }
 }

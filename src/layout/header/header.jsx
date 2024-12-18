@@ -6,6 +6,9 @@ import { useModal } from "../../hooks/useModal";
 import { Modal } from "../../components/modal/modal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import instagram from "../../assets/icons/footer/instagram.svg";
+import facebook from "../../assets/icons/footer/facebook.svg";
+import telegram from "../../assets/icons/footer/telegram.svg";
 
 import { DownOutlined } from "@ant-design/icons";
 import { Dropdown, Space } from "antd";
@@ -128,6 +131,32 @@ export const Header = () => {
               </Link>
             </li>
           </ul>
+          <div className="header__socials">
+            <a
+              className="header__badge"
+              href="https://www.facebook.com/admelectrics.uz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={facebook} alt="Facebook" />
+            </a>
+            <a
+              className="header__badge"
+              href="https://www.facebook.com/admelectrics.uz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={instagram} alt="Instagram" />
+            </a>
+            <a
+              className="header__badge"
+              href="https://t.me/ADM_ELECTRICS_Jobs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={telegram} alt="Telegram" />
+            </a>
+          </div>
         </Modal>
       </div>
     </div>
