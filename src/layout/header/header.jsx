@@ -16,25 +16,34 @@ import { Dropdown, Space } from "antd";
 const items = [
   {
     label: (
-      <a className="dropdown__link" href="/about">
+      <Link className="dropdown__link" onClick={close} to="/about">
         Kompaniya haqida
-      </a>
+      </Link>
+      // <a className="dropdown__link" href="/about">
+      //   Kompaniya haqida
+      // </a>
     ),
     key: "0",
   },
   {
     label: (
-      <a className="dropdown__link" href="/company_structure">
+      <Link className="dropdown__link" onClick={close} to="/company_structure">
         Korxona boshqaruvi
-      </a>
+      </Link>
+      // <a className="dropdown__link" href="/company_structure">
+      //   Korxona boshqaruvi
+      // </a>
     ),
     key: "1",
   },
   {
     label: (
-      <a className="dropdown__link" href="/news">
+      <Link className="dropdown__link" onClick={close} to="/news">
         Yangiliklar
-      </a>
+      </Link>
+      // <a className="dropdown__link" href="/news">
+      //   Yangiliklar
+      // </a>
     ),
     key: "2",
   },
