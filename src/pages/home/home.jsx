@@ -46,7 +46,7 @@ export const Home = () => {
       </div>
 
       <div className="comments container">
-        <h2 className="comments__title">Izohlar</h2>
+        <h2 className="comments__title">Mahsulotlar</h2>
         {/* <ul className="comments__list">
           <li className="comments__item">
             <div className="comments__header">
