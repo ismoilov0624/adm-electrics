@@ -4,7 +4,10 @@ import overwievImg from "../../assets/images/about/overwiev-img.jpg";
 import adm from "../../assets/images/about/adm.jpg";
 import { Link } from "react-router-dom";
 
+import { useScrollTop } from "../../hooks/useScrollTop";
+
 export const About = () => {
+  useScrollTop(0);
   const goals = [
     {
       number: "01",

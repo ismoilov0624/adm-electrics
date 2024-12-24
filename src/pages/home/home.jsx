@@ -9,7 +9,11 @@ import { NewsCard } from "../news/components/card/news-card";
 import { Link } from "react-router-dom";
 import { newsData } from "../news/news-data";
 
+import { useScrollTop } from "../../hooks/useScrollTop";
+
 export const Home = () => {
+  useScrollTop(0);
+
   return (
     <div className="home">
       <HomeBanner />

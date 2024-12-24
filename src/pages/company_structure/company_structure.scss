@@ -21,16 +21,20 @@
     gap: 20px;
   }
 }
+
 .profile-card {
+  margin: 0 auto;
   background-color: #f8f9fa;
   border-radius: 8px;
-  gap: 24px;
+  // gap: 16px; // Reduced gap between elements
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  // padding: 10px; // Added padding to the card itself
+  max-width: 280px; // Limit the width of each card
 
   .profile-image {
     img {
       width: 100%;
-      height: 100%;
+      height: 100%; // Adjusted height for smaller image
       object-fit: cover;
       border-radius: 4px;
     }
@@ -38,25 +42,25 @@
 
   .profile-info {
     flex-grow: 1;
-    padding: 20px;
+    padding: 10px; // Reduced padding
 
     .name {
       color: #e96208;
-      font-size: 24px;
+      font-size: 16px; // Reduced font size
       font-weight: 600;
       margin: 0 0 8px 0;
     }
 
     .position {
       color: #333;
-      font-size: 16px;
-      margin: 0 0 24px 0;
+      font-size: 14px; // Reduced font size
+      margin: 0 0 16px 0; // Reduced margin
     }
 
     .contact-info {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 12px; // Reduced gap
 
       .contact-item {
         display: flex;
@@ -65,12 +69,12 @@
 
         .label {
           color: #666;
-          font-size: 14px;
+          font-size: 12px; // Reduced font size
         }
 
         .value {
           color: #333;
-          font-size: 16px;
+          font-size: 14px; // Reduced font size
           text-decoration: none;
 
           &:hover {
