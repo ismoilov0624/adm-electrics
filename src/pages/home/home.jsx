@@ -77,7 +77,7 @@ export const Home = () => {
               ))}
             </NewsBanner>
           </div>
-          <Link className="news_link" to="news">
+          <Link className="news_link" to="/news">
             Barcha yangiliklar
           </Link>
         </div>
