@@ -4,6 +4,11 @@ import slider2 from "../../assets/images/home/slider2.jpg";
 import "./home.scss";
 import { CommentSlider } from "./components/commentSlider/commentSlider";
 
+import { NewsBanner } from "../news/components/banner/news-banner";
+import { NewsCard } from "../news/components/card/news-card";
+import { Link } from "react-router-dom";
+import { newsData } from "../news/news-data";
+
 export const Home = () => {
   return (
     <div className="home">
@@ -47,31 +52,31 @@ export const Home = () => {
 
       <div className="comments container">
         <h2 className="comments__title">Mahsulotlar</h2>
-        {/* <ul className="comments__list">
-          <li className="comments__item">
-            <div className="comments__header">
-              <p className="comments__author">John</p>
-            </div>
-            <p className="comments__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
-              sed ex quos aut quisquam. Velit exercitationem magni possimus
-              voluptates amet pariatur culpa natus nesciunt maiores,
-              consequuntur nobis repellendus nemo cumque.
-            </p>
-          </li>
-          <li className="comments__item">
-            <div className="comments__header">
-              <p className="comments__author">Doe</p>
-            </div>
-            <p className="comments__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
-              sed ex quos aut quisquam. Velit exercitationem magni possimus
-              voluptates amet pariatur culpa natus nesciunt maiores,
-              consequuntur nobis repellendus nemo cumque.
-            </p>
-          </li>
-        </ul> */}
+
         <CommentSlider />
+
+        <div className="news_section">
+          <h2 className="comments__title">Yangiliklar</h2>
+          <div className="news_section__content">
+            <NewsBanner>
+              {newsData.slice(0, 4).map((item) => (
+                <NewsCard
+                  key={item.id}
+                  img={item.img}
+                  title={item.title}
+                  text={item.text}
+                >
+                  <Link to={`news-detail/${item.id}`} className="news__button">
+                    Batafsil
+                  </Link>
+                </NewsCard>
+              ))}
+            </NewsBanner>
+          </div>
+          <Link className="news_link" to="news">
+            Barcha yangiliklar
+          </Link>
+        </div>
       </div>
     </div>
   );

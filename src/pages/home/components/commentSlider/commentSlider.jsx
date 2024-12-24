@@ -2,13 +2,17 @@ import React from "react";
 import Slider from "react-slick";
 import "./commentSlider.scss";
 import harness from "../../../../assets/images/home/harness.png";
+import product1 from "../../../../assets/images/home/product1.png";
+import product2 from "../../../../assets/images/home/product2.png";
+import product3 from "../../../../assets/images/home/product3.png";
+import product4 from "../../../../assets/images/home/product4.png";
 
 const comments = [
-  { id: 1, name: "Product A", image: harness },
-  { id: 2, name: "Product B", image: harness },
-  { id: 3, name: "Product C", image: harness },
-  { id: 4, name: "Product D", image: harness },
-  { id: 5, name: "Product E", image: harness },
+  { id: 1, name: "Harness", image: product1 },
+  { id: 2, name: "Harness", image: product2 },
+  { id: 3, name: "Harness", image: product3 },
+  { id: 4, name: "Harness", image: harness },
+  { id: 5, name: "Harness", image: harness },
 ];
 
 const CommentCard = ({ name, image }) => (

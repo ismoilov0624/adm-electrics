@@ -23,7 +23,7 @@
 
 .overwiev__box {
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
   flex: 1;
   margin: 0 auto;
 
@@ -40,7 +40,7 @@
   margin: 0 auto;
   font-size: 16px;
   color: #555;
-  line-height: 28.8px;
+  line-height: 25px;
   padding: 20px;
   font-family: "Roboto", sans-serif;
 }
@@ -84,6 +84,7 @@
   .overwiev__content {
     width: 100%;
     padding: 10px;
+    line-height: 25px;
   }
   .goals {
     flex-direction: column;

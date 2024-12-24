@@ -112,3 +112,22 @@
     line-height: 1.6;
   }
 }
+
+.news_link {
+  display: block;
+  width: 150px;
+  margin: 20px auto 0;
+  padding: 10px;
+  text-align: center;
+  background-color: #345473;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #c73c12;
+  }
+}

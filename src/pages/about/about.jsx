@@ -1,6 +1,7 @@
 import React from "react";
 import "./about.scss";
 import overwievImg from "../../assets/images/about/overwiev-img.jpg";
+import adm from "../../assets/images/about/adm.jpg";
 import { Link } from "react-router-dom";
 
 export const About = () => {
@@ -37,7 +38,7 @@ export const About = () => {
         </h2>
         <div className="overwiev__wrapper">
           <div className="overwiev__box">
-            <img className="overwiev__img" src={overwievImg} alt="" />
+            <img className="overwiev__img" src={adm} alt="" />
           </div>
           <div className="overwiev__content">
             <p className="overwiev__text">
@@ -74,7 +75,7 @@ export const About = () => {
       </div>
       <div className="goals container">
         <div className="goals__header">
-          <h2 className="goals__title">Strategigk maqsadlar</h2>
+          <h2 className="goals__title">Strategik maqsadlar</h2>
           <p className="goals__text">
             ADM Electrics kompaniyasining bosh maqsadi – innovatsion
             texnologiyalar va yuqori sifatli mahsulotlar orqali mijozlar
