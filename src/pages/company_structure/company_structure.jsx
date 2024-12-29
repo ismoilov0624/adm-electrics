@@ -1,12 +1,18 @@
 import React from "react";
 import "./company_structure.scss";
 import { Link } from "react-router-dom";
+
+import { useScrollTop } from "../../hooks/useScrollTop";
 import { ProfileCard } from "./components/profile-card/profile-card";
 import profileImage from "../../assets/images/company-structure/img.jpg";
 import Abduraxmon from "../../assets/images/company-structure/Abduraxmon.jpg";
 import Bekzod from "../../assets/images/company-structure/Bekzod.jpg";
 import Islomjon from "../../assets/images/company-structure/islomjon.jpg";
 import Murodiljon from "../../assets/images/company-structure/murodiljon.jpg";
+import Muslimbek from "../../assets/images/company-structure/Muslimbek.jpg";
+import Ulugbek from "../../assets/images/company-structure/Ulug'bek.jpg";
+import Valisher from "../../assets/images/company-structure/Valisher.jpg";
+import Xushnudbek from "../../assets/images/company-structure/Xushnudbek.jpg";
 
 const profileData = [
   {
@@ -26,7 +32,7 @@ const profileData = [
     schedule: "Seshanba 09:00 - 11:00",
   },
   {
-    image: profileImage,
+    image: Valisher,
     name: "Mirzayev Valisher Alisherovich",
     position: "Ma'muriyat bo'limi rahbari",
     phone: "+99899 994 44 88",
@@ -34,7 +40,7 @@ const profileData = [
     schedule: "Chorshanba 09:00 - 11:00",
   },
   {
-    image: profileImage,
+    image: Ulugbek,
     name: "Madaminov Ulug'bek Numonjon o'g'li",
     position: "Xodimlar boshqaruvi bo'limi rahbari",
     phone: "+99893 412 70 08",
@@ -50,7 +56,7 @@ const profileData = [
     schedule: "Dushanba 09:00 - 11:00",
   },
   {
-    image: profileImage,
+    image: Muslimbek,
     name: "Ne'matillayev Muslimbek Shuxratbek o'g'li",
     position: "Bosh Xisobchi",
     phone: "+99894 566 71 77",
@@ -66,7 +72,7 @@ const profileData = [
     schedule: "Dushanba 09:00 - 11:00",
   },
   {
-    image: profileImage,
+    image: Xushnudbek,
     name: "Mamatqulov Xushnudbek Davlatbek o'g'li",
     position: "Ombor mudiri",
     phone: "+99895 044 78 88",
@@ -100,6 +106,7 @@ const profileData = [
 ];
 
 export const Company_structure = () => {
+  useScrollTop(0);
   return (
     <div className="company__structure container">
       <Link className="home_page_link" to="/">

@@ -5,7 +5,10 @@ import { NewsBanner } from "./components/banner/news-banner";
 import { newsData } from "./news-data";
 import { NewsCard } from "./components/card/news-card";
 
+import { useScrollTop } from "../../hooks/useScrollTop";
+
 export const News = () => {
+  useScrollTop(0);
   return (
     <div className="news container">
       <Link className="home_page_link" to="/">

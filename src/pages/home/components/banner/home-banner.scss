@@ -1,5 +1,12 @@
 .slider {
   &__box {
-    max-height: 400px;
+    max-height: 95vh;
   }
+}
+
+.slider__video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }

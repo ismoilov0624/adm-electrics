@@ -3,9 +3,13 @@
   align-items: center;
   justify-content: space-between;
 
+  @media (min-width: 928px) {
+    padding: 20px 90px !important;
+  }
+
   &__logo {
     .logo {
-      max-width: 350px;
+      max-width: 325px;
     }
   }
 

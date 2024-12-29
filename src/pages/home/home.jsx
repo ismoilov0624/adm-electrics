@@ -1,6 +1,6 @@
 import React from "react";
 import { HomeBanner } from "./components/banner/home-banner";
-import slider2 from "../../assets/images/home/slider2.jpg";
+import slider2 from "../../assets/images/home/slider2.jpeg";
 import "./home.scss";
 import { CommentSlider } from "./components/commentSlider/commentSlider";
 
@@ -9,7 +9,11 @@ import { NewsCard } from "../news/components/card/news-card";
 import { Link } from "react-router-dom";
 import { newsData } from "../news/news-data";
 
+import { useScrollTop } from "../../hooks/useScrollTop";
+
 export const Home = () => {
+  useScrollTop(0);
+
   return (
     <div className="home">
       <HomeBanner />
@@ -73,7 +77,7 @@ export const Home = () => {
               ))}
             </NewsBanner>
           </div>
-          <Link className="news_link" to="news">
+          <Link className="news_link" to="/news">
             Barcha yangiliklar
           </Link>
         </div>

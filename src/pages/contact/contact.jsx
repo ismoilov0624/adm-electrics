@@ -3,9 +3,13 @@ import "./contact.scss";
 import GoogleMapReact from "google-map-react";
 import { Link } from "react-router-dom";
 
+import { useScrollTop } from "../../hooks/useScrollTop";
+
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 export const Contact = () => {
+  useScrollTop(0);
+
   const defaultProps = {
     center: {
       lat: 40.63264499263889,
