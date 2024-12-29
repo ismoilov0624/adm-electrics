@@ -104,10 +104,11 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-bottom: 20px;
 }
 
 .menu-item {
-  font-size: 24px;
+  font-size: 20px;
   color: #3d3d3d;
   font-weight: 500;
   transition: color 0.3s ease-in-out;
@@ -115,9 +116,9 @@
 
   a {
     text-decoration: none;
+    color: inherit;
   }
 }
-
 .header__socials {
   position: absolute;
   bottom: 50px;
@@ -127,8 +128,8 @@
 
   .header__badge {
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: #f1f1f1;
     border-radius: 50%;
     padding: 10px;
@@ -144,4 +145,21 @@
       height: auto;
     }
   }
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.contact-item span {
+  color: #333;
 }

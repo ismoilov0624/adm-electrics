@@ -1,4 +1,3 @@
-import news from "../../assets/images/news/news.webp";
 import news2 from "../../assets/images/news/news2.webp";
 import news3 from "../../assets/images/news/news3.webp";
 import news4 from "../../assets/images/news/news4.webp";
@@ -13,21 +12,24 @@ export const newsData = [
   {
     id: 1,
     img: ochilish,
-    title:
-      "“ADM ELECTRICS” MChJ zavodining ochilishi: avtomobillar uchun butlovchi qismlar ishlab chiqarishning yangi bosqichi",
-    text: "2024-yil 31-may kuni shahrimizda uzoq kutilgan voqea – “ADM ELECTRICS” MChJ yangi zavodining ochilishi bo‘lib o‘tdi. Bizning kompaniyamiz avtomobil qismlari, elektr komponentlari va isitish, shamollatish va havoni tozalash (HVAC) tizimlari uchun butlovchi qismlarni ishlab chiqarish bilan shug'ullanishini mamnuniyat bilan e'lon qilamiz.",
+    title: "“ADM ELECTRICS” MChJ zavodining ochilsh",
+    text: "2024-yil 31-may kuni shahrimizda uzoq kutilgan voqea – “ADM ELECTRICS” MChJ yangi zavodining ochilishi bo‘lib o‘tdi. Bizning kompaniyamiz avtomobil qismlari, elektr komponentlari va isitish, shamollatish va havoni tozalash (HVAC) tizimlari uchun butlovchi qismlarni ishlab chiqarish bilan shug'ullanishini mamnuniyat bilan e'lon qilamiz.Zavodda kesish, muhrlash, presslash, yig‘ish va sinovdan o‘tkazish kabi asosiy ishlab chiqarish jarayonlari mahalliylashtirilgan. Bu bizga mahsulotlarimizning yuqori standartlari va ishonchliligini ta'minlab, har bir bosqichda sifatni nazorat qilish imkonini beradi.",
   },
   {
     id: 2,
     img: footballImg,
     title: "Zavoddagi futbol turniri",
-    text: "Yaqinda fabrikamizda rahbariyat tomonidan tashkil etilgan qiziqarli va dinamik futbol turniri bo'lib o'tdi. Ushbu tadbir turli bo'limlar xodimlarini birlashtirib, ularni g'alabaga intilish va jamoaviy ruhda birlashtirdi. ",
+    text: `Yaqinda fabrikamizda rahbariyat tomonidan tashkil etilgan qiziqarli va dinamik futbol turniri bo'lib o'tdi. Ushbu tadbir turli bo'limlar xodimlarini birlashtirib, ularni g'alabaga intilish va jamoaviy ruhda birlashtirdi. 
+
+    Turli bo‘limlar vakili bo‘lgan yigitlarimiz o‘ziga xos jamoa tuzdilar. Futbol o‘yinlari nafaqat sovrinli o‘rinlar uchun bellashuv, balki haqiqiy sport, birlik va do‘stlik bayramiga aylandi. Har bir ishtirokchi g'alaba qozonishga ahd qildi, lekin hamma uchun o'yindan zavq olish va o'zaro tushunish muhimroq edi. Futbol nafaqat liniya ishchilarini, balki zavodimizning barcha burchaklaridagi ishchilarni ham birlashtirdi. Uchrashuvlar hayajon va qo‘llab-quvvatlash muhitida o‘tdi, unda har bir kishi o‘z mahoratini namoyon etib, jamoa muvaffaqiyatiga hissa qo‘shishi mumkin edi.`,
   },
   {
     id: 3,
     img: award,
     title: "ADM ELECTRICS MChJ xodimlarini moddiy mukofotlash",
-    text: "Har juma kuni “ADM ELECTRICS” MChJ xodimlari uchun maxsus moliyaviy taqdirlash marosimi o‘tkaziladi. Ushbu tadbir individual sa'y-harakatlarni va jamoaviy mehnatni tan olish va rag'batlantirishga qaratilgan. O'z faoliyatida ajoyib natijalarni ko'rsatgan xodimlar munosib mukofotlarga ega bo'lishadi, bu esa jamoada ijobiy muhit yaratish va motivatsiyani oshirishga yordam beradi.",
+    text: `Har juma kuni “ADM ELECTRICS” MChJ xodimlari uchun maxsus moliyaviy taqdirlash marosimi o‘tkaziladi. Ushbu tadbir individual sa'y-harakatlarni va jamoaviy mehnatni tan olish va rag'batlantirishga qaratilgan. O'z faoliyatida ajoyib natijalarni ko'rsatgan xodimlar munosib mukofotlarga ega bo'lishadi, bu esa jamoada ijobiy muhit yaratish va motivatsiyani oshirishga yordam beradi.
+
+    Xodimlarning sa'y-harakatlarini qo'llab-quvvatlash va e'tirof etish kompaniyamiz madaniyatining muhim qismidir. Biz ishonamizki, har bir hissa muhim va bunday tashabbuslar bizga jamoaviy ruhni mustahkamlash va umumiy muvaffaqiyat sari harakat qilish imkonini beradi. `,
   },
   {
     id: 4,

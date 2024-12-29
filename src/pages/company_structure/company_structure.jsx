@@ -112,7 +112,7 @@ export const Company_structure = () => {
       <Link className="home_page_link" to="/">
         Bosh sahifa
       </Link>
-      / Korxona boshqaruvi
+      <span> / Korxona boshqaruvi</span>
       <div className="company__structure__wrapper">
         {profileData.map((profile, index) => (
           <ProfileCard key={index} {...profile} />

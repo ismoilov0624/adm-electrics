@@ -10,7 +10,7 @@ export const Footer = () => {
     <div className="footer">
       <div className="footer__wrapper ">
         <div className="footer__info">
-          <p className="footer__title">Biz bilan bog'laning</p>
+          {/* <p className="footer__title">Biz bilan bog'laning</p> */}
           <ul className="footer__details">
             <li className="footer__label">Email</li>
             <p className="footer__text">info@adm-electrics.com</p>
@@ -27,7 +27,7 @@ export const Footer = () => {
         </div>
         <div className="footer__center">
           <Link to="/">
-            <img src={logo} alt="" />
+            <img className="footer__logo" src={logo} alt="" />
           </Link>
           <p className="footer__description">Ijtimoy tarmoqlar</p>
 
@@ -61,28 +61,39 @@ export const Footer = () => {
         <div className="footer__utility">
           <ul className="footer__links">
             <li>
-              <Link to="/">Bosh sahifa</Link>
+              <Link to="/" className="footer__link">
+                Bosh sahifa
+              </Link>
             </li>
             <li>
-              <Link to="/about">Kompaniya haqida</Link>
+              <Link to="/about" className="footer__link">
+                Kompaniya haqida
+              </Link>
             </li>
             <li>
-              <Link to="/company_structure">Korxona boshqaruvi</Link>
+              <Link to="/company_structure" className="footer__link">
+                Korxona boshqaruvi
+              </Link>
             </li>
             <li>
-              <Link to="/news">Yangiliklar</Link>
+              <Link to="/news" className="footer__link">
+                Yangiliklar
+              </Link>
             </li>
             <li>
               <a
-                href="https://jobs.adm.uz/vacancies?company=4"
+                href="https://jobs.adm.uz/vacancies"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="footer__link"
               >
                 Karyera
               </a>
             </li>
             <li>
-              <Link to="/contact">Kontaktlar</Link>
+              <Link to="/contact" className="footer__link">
+                Kontaktlar
+              </Link>
             </li>
           </ul>
         </div>

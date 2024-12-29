@@ -4,12 +4,16 @@ import "./header.scss";
 import logo from "../../assets/images/home/logo.png";
 import { useModal } from "../../hooks/useModal";
 import { Modal } from "../../components/modal/modal";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import instagram from "../../assets/icons/footer/instagram.svg";
 import facebook from "../../assets/icons/footer/facebook.svg";
 import telegram from "../../assets/icons/footer/telegram.svg";
-
+import {
+  faEnvelope,
+  faPhone,
+  faMapMarkerAlt,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { DownOutlined } from "@ant-design/icons";
 import { Dropdown, Space } from "antd";
 
@@ -19,9 +23,6 @@ const items = [
       <Link className="dropdown__link" onClick={close} to="/about">
         Kompaniya haqida
       </Link>
-      // <a className="dropdown__link" href="/about">
-      //   Kompaniya haqida
-      // </a>
     ),
     key: "0",
   },
@@ -30,9 +31,6 @@ const items = [
       <Link className="dropdown__link" onClick={close} to="/company_structure">
         Korxona boshqaruvi
       </Link>
-      // <a className="dropdown__link" href="/company_structure">
-      //   Korxona boshqaruvi
-      // </a>
     ),
     key: "1",
   },
@@ -41,9 +39,6 @@ const items = [
       <Link className="dropdown__link" onClick={close} to="/news">
         Yangiliklar
       </Link>
-      // <a className="dropdown__link" href="/news">
-      //   Yangiliklar
-      // </a>
     ),
     key: "2",
   },
@@ -122,7 +117,7 @@ export const Header = () => {
             </li>
             <li className="menu-item">
               <a
-                href="https://jobs.adm.uz/vacancies?company=4"
+                href="https://jobs.adm.uz/vacancies"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -135,6 +130,22 @@ export const Header = () => {
               </Link>
             </li>
           </ul>
+
+          <div className="contact-info">
+            <div className="contact-item">
+              <FontAwesomeIcon icon={faEnvelope} />
+              <span>info@adm-electrics.com</span>
+            </div>
+            <div className="contact-item">
+              <FontAwesomeIcon icon={faPhone} />
+              <span>+998 55 202 00 05</span>
+            </div>
+            <div className="contact-item">
+              <FontAwesomeIcon icon={faMapMarkerAlt} />
+              <span>Asaka tumani Kamolot MFY Marg'iloniy ko‘chasi, 65-uy</span>
+            </div>
+          </div>
+
           <div className="header__socials">
             <a
               className="header__badge"

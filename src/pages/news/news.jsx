@@ -14,7 +14,7 @@ export const News = () => {
       <Link className="home_page_link" to="/">
         Bosh sahifa
       </Link>
-      / Yangiliklar
+      <span> / Yangiliklar</span>
       <h2 className="news__title">Yangiliklar</h2>
       <NewsBanner>
         {newsData.map((item) => (

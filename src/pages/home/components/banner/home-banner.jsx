@@ -36,9 +36,10 @@ function SamplePrevArrow(props) {
 const settings = {
   dots: false,
   infinite: true,
-  speed: 500,
+  speed: 500, // Slide transition speed in ms
   slidesToShow: 1,
   autoplay: true,
+  autoplaySpeed: 10000, // Time between slides in ms (10 seconds)
   slidesToScroll: 1,
   nextArrow: <SampleNextArrow />,
   prevArrow: <SamplePrevArrow />,

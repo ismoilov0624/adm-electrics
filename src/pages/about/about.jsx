@@ -1,6 +1,5 @@
 import React from "react";
 import "./about.scss";
-import overwievImg from "../../assets/images/about/overwiev-img.jpg";
 import adm from "../../assets/images/about/adm.jpg";
 import { Link } from "react-router-dom";
 
@@ -33,7 +32,7 @@ export const About = () => {
       <Link className="home_page_link" to="/">
         Bosh sahifa
       </Link>
-      / Kompaniya haqida
+      <span> / Korxona haqida</span>
       <div className="overwiev">
         <h2 className="about__title">
           “ADM ELECTRICS” MChJ avtomobil sanoatiga mo’ljallangan sim o’rovlarini
