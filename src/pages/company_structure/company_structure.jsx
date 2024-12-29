@@ -10,7 +10,6 @@ import Bekzod from "../../assets/images/company-structure/Bekzod.jpg";
 import Islomjon from "../../assets/images/company-structure/islomjon.jpg";
 import Murodiljon from "../../assets/images/company-structure/murodiljon.jpg";
 import Muslimbek from "../../assets/images/company-structure/Muslimbek.jpg";
-import Ulugbek from "../../assets/images/company-structure/Ulugbek.jpg";
 import Valisher from "../../assets/images/company-structure/Valisher.jpg";
 import Xushnudbek from "../../assets/images/company-structure/Xushnudbek.jpg";
 
@@ -40,7 +39,7 @@ const profileData = [
     schedule: "Chorshanba 09:00 - 11:00",
   },
   {
-    image: Ulugbek,
+    image: profileImage,
     name: "Madaminov Ulug'bek Numonjon o'g'li",
     position: "Xodimlar boshqaruvi bo'limi rahbari",
     phone: "+99893 412 70 08",
