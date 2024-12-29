@@ -23,6 +23,7 @@
     font-size: 20px;
     font-weight: 500;
     transition: color 0.3s ease;
+    cursor: pointer;
 
     &:hover {
       color: #fc3e04;
@@ -147,19 +148,19 @@
   }
 }
 
-.contact-info {
+.contact-info-header {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.contact-item {
+.contact-item-header {
   display: flex;
   align-items: center;
   gap: 8px;
   font-size: 14px;
 }
 
-.contact-item span {
+.contact-item-header span {
   color: #333;
 }

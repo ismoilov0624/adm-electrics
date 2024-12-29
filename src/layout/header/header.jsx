@@ -72,7 +72,7 @@ export const Header = () => {
         </Dropdown>
         <a
           className="header__link"
-          href="https://jobs.adm.uz/vacancies?company=4"
+          href="https://jobs.adm.uz/vacancies"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -131,16 +131,16 @@ export const Header = () => {
             </li>
           </ul>
 
-          <div className="contact-info">
-            <div className="contact-item">
+          <div className="contact-info-header">
+            <div className="contact-item-header">
               <FontAwesomeIcon icon={faEnvelope} />
               <span>info@adm-electrics.com</span>
             </div>
-            <div className="contact-item">
+            <div className="contact-item-header">
               <FontAwesomeIcon icon={faPhone} />
               <span>+998 55 202 00 05</span>
             </div>
-            <div className="contact-item">
+            <div className="contact-item-header">
               <FontAwesomeIcon icon={faMapMarkerAlt} />
               <span>Asaka tumani Kamolot MFY Marg'iloniy ko‘chasi, 65-uy</span>
             </div>
