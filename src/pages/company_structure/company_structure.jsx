@@ -10,7 +10,7 @@ import Bekzod from "../../assets/images/company-structure/Bekzod.jpg";
 import Islomjon from "../../assets/images/company-structure/islomjon.jpg";
 import Murodiljon from "../../assets/images/company-structure/murodiljon.jpg";
 import Muslimbek from "../../assets/images/company-structure/Muslimbek.jpg";
-import Ulugbek from "../../assets/images/company-structure/Ulug'bek.jpg";
+import Ulugbek from "../../assets/images/company-structure/Ulugbek.jpg";
 import Valisher from "../../assets/images/company-structure/Valisher.jpg";
 import Xushnudbek from "../../assets/images/company-structure/Xushnudbek.jpg";
 
