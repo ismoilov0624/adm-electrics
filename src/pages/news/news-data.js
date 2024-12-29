@@ -6,12 +6,11 @@ import news6 from "../../assets/images/news/news6.webp";
 
 import footballImg from "../../assets/images/news/football.jpg";
 import award from "../../assets/images/news/awards.jpg";
-import ochilish from "../../assets/images/news/ochilish.jpg";
 
 export const newsData = [
   {
     id: 1,
-    img: ochilish,
+    img: news2,
     title: "“ADM ELECTRICS” MChJ zavodining ochilsh",
     text: "2024-yil 31-may kuni shahrimizda uzoq kutilgan voqea – “ADM ELECTRICS” MChJ yangi zavodining ochilishi bo‘lib o‘tdi. Bizning kompaniyamiz avtomobil qismlari, elektr komponentlari va isitish, shamollatish va havoni tozalash (HVAC) tizimlari uchun butlovchi qismlarni ishlab chiqarish bilan shug'ullanishini mamnuniyat bilan e'lon qilamiz.Zavodda kesish, muhrlash, presslash, yig‘ish va sinovdan o‘tkazish kabi asosiy ishlab chiqarish jarayonlari mahalliylashtirilgan. Bu bizga mahsulotlarimizning yuqori standartlari va ishonchliligini ta'minlab, har bir bosqichda sifatni nazorat qilish imkonini beradi.",
   },
