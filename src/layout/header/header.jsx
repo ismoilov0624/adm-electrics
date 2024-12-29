@@ -64,10 +64,7 @@ export const Header = () => {
           }}
         >
           <a onClick={(e) => e.preventDefault()}>
-            <Space>
-              <p className="header__link">Kompaniya haqida</p>
-              <DownOutlined />
-            </Space>
+            <p className="header__link">Kompaniya haqida</p>
           </a>
         </Dropdown>
         <a
