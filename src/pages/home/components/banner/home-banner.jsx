@@ -4,8 +4,6 @@ import "./home-banner.scss";
 import vid1 from "../../../../assets/video/vid1.mp4";
 import vid2 from "../../../../assets/video/vid2.mp4";
 import vid3 from "../../../../assets/video/vid3.mp4";
-import slider1 from "../../../../assets/images/home/slider1.jpg";
-import slider2 from "../../../../assets/images/home/slider2.jpeg";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -76,7 +74,7 @@ export const HomeBanner = () => {
     <div className="home__banner">
       <Slider className="slider" {...settings}>
         <div className="slider__box">
-          <video autoPlay muted loop className="slider__video" poster={slider1}>
+          <video autoPlay muted loop className="slider__video">
             <source src={vid1} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -94,13 +92,7 @@ export const HomeBanner = () => {
           </video>
         </div>
         <div className="slider__box">
-          <video
-            autoPlay
-            muted
-            loop
-            className="slider__video"
-            poster={slider1} // Poster image for this video
-          >
+          <video autoPlay muted loop className="slider__video">
             <source src={vid3} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
