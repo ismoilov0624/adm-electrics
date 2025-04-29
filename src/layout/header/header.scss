@@ -3,7 +3,7 @@
   position: fixed;
   width: 100vw;
   top: 0;
-  z-index: 100;
+  z-index: 1;
 }
 
 .header {
@@ -177,4 +177,9 @@
 
 .contact-item-header span {
   color: #333;
+}
+
+.modal-panel {
+  z-index: 999;
+  position: relative;
 }
