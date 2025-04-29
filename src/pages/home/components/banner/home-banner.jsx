@@ -76,37 +76,19 @@ export const HomeBanner = () => {
     <div className="home__banner">
       <Slider className="slider" {...settings}>
         <div className="slider__box">
-          <video
-            autoPlay
-            muted
-            loop
-            className="slider__video"
-            poster={slider1} // Poster image for this video
-          >
+          <video autoPlay muted loop className="slider__video" poster={slider1}>
             <source src={vid1} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
         <div className="slider__box">
-          <video
-            autoPlay
-            muted
-            loop
-            className="slider__video"
-            poster={slider2} // Poster image for this video
-          >
+          <video autoPlay muted loop className="slider__video" poster={slider2}>
             <source src={vid2} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
         <div className="slider__box">
-          <video
-            autoPlay
-            muted
-            loop
-            className="slider__video"
-            poster={slider1} // Poster image for this video
-          >
+          <video autoPlay muted loop className="slider__video" poster={slider1}>
             <source src={vid3} type="video/mp4" />
             Your browser does not support the video tag.
           </video>

@@ -11,7 +11,11 @@ import { newsData } from "../news/news-data";
 
 import { useScrollTop } from "../../hooks/useScrollTop";
 
+import { useTranslation } from "react-i18next";
+
 export const Home = () => {
+  const { t } = useTranslation();
+
   useScrollTop(0);
 
   return (
@@ -23,44 +27,28 @@ export const Home = () => {
           <img
             className="about_company__img"
             src={slider2}
-            alt="Company Overview"
+            alt={t("aboutCompanyAlt")}
           />
         </div>
         <div className="about_company__content">
-          <h2 className="about_company__title">“ADM ELECTRICS” MChJ</h2>
-          <p className="about_company__text">
-            “ADM ELECTRICS” quyidagi yo‘nalishlarda faoliyat yuritadi:
-          </p>
+          <h2 className="about_company__title">{t("aboutCompanyTitle")}</h2>
+          <p className="about_company__text">{t("aboutCompanyText")}</p>
           <ul className="about_company__list">
-            <li>
-              Avtotransport vositalari uchun butlovchi qismlar: elektr
-              komponentlar va HVAC tizimi uchun komponentlar ishlab chiqarish;
-            </li>
-            <li>
-              Kesish, germetizatsiyalash, siqish, yig‘ish va sinovdan o‘tkazish
-              jarayonlarini mahalliylashtirish;
-            </li>
-            <li>
-              Mahalliy va xorijiy bozorlarga yuqori sifatli mahsulotlar yetkazib
-              berish.
-            </li>
+            <li>{t("companyProduct1")}</li>
+            <li>{t("companyProduct2")}</li>
+            <li>{t("companyProduct3")}</li>
           </ul>
-          <p className="about_company__text">
-            Korxona 2023-yilda tashkil etilgan bo‘lib, Andijon viloyatining
-            Asaka shahridagi 1,4 gektar yer maydonida joylashgan. Ehtiyot
-            qismlarni seriyaviy ishlab chiqarishning boshlanishi – 2024-yilning
-            15-apreldan belgilangan.
-          </p>
+          <p className="about_company__text">{t("aboutCompanyDetails")}</p>
         </div>
       </div>
 
       <div className="comments container">
-        <h2 className="comments__title">Mahsulotlar</h2>
+        <h2 className="comments__title">{t("productsTitle")}</h2>
 
         <CommentSlider />
 
         <div className="news_section">
-          <h2 className="comments__title">Yangiliklar</h2>
+          <h2 className="comments__title">{t("newsTitle")}</h2>
           <div className="news_section__content">
             <NewsBanner>
               {newsData.slice(0, 4).map((item) => (
@@ -71,14 +59,14 @@ export const Home = () => {
                   text={item.text}
                 >
                   <Link to={`news-detail/${item.id}`} className="news__button">
-                    Batafsil
+                    {t("readMore")}
                   </Link>
                 </NewsCard>
               ))}
             </NewsBanner>
           </div>
           <Link className="news_link" to="/news">
-            Barcha yangiliklar
+            {t("allNews")}
           </Link>
         </div>
       </div>

@@ -5,7 +5,7 @@ import { useScrollTop } from "../../hooks/useScrollTop";
 import "./news-detail.scss";
 
 export const NewsDetail = () => {
-  useScrollTop(200);
+  useScrollTop(0);
   const params = useParams();
   const result = newsData.find((obj) => obj.id === Number(params.slug));
 
@@ -15,7 +15,7 @@ export const NewsDetail = () => {
         <Link className="home_page_link" to="/">
           Bosh sahifa
         </Link>
-        / Yangiliklar
+        <span> / Yangiliklar</span>
       </div>
       <div className="news__detail__box">
         <div className="news__related">

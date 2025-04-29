@@ -7,6 +7,8 @@ import "./global.scss";
 import { Company_structure } from "./pages/company_structure/company_structure";
 import { News } from "./pages/news/news";
 import { NewsDetail } from "./pages/news-detail/news-detail";
+import "./i18n";
+import "leaflet/dist/leaflet.css";
 
 function App() {
   return (

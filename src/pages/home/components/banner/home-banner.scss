@@ -1,6 +1,10 @@
 .slider {
+  margin-top: 100px;
   &__box {
     max-height: 95vh;
+  }
+  @media screen and (max-width: 500px) {
+    margin-top: 103px;
   }
 }
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export const ProfileCard = ({
   image,
@@ -8,6 +9,8 @@ export const ProfileCard = ({
   email,
   schedule,
 }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="profile-card">
       <div className="profile-image">
@@ -18,19 +21,19 @@ export const ProfileCard = ({
         <p className="position">{position}</p>
         <div className="contact-info">
           <div className="contact-item">
-            <span className="label">Telefon:</span>
+            <span className="label">{t("phone")}</span>
             <a href={`tel:${phone}`} className="value">
               {phone}
             </a>
           </div>
           <div className="contact-item">
-            <span className="label">Elektron pochta:</span>
+            <span className="label">{t("email")}</span>
             <a href={`mailto:${email}`} className="value">
               {email}
             </a>
           </div>
           <div className="contact-item">
-            <span className="label">Qabul kunlari:</span>
+            <span className="label">{t("schedule")}</span>
             <span className="value">{schedule}</span>
           </div>
         </div>

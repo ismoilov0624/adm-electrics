@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "./header.scss";
 import logo from "../../assets/images/home/logo.png";
 import { useModal } from "../../hooks/useModal";
@@ -15,164 +16,179 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { DownOutlined } from "@ant-design/icons";
-import { Dropdown, Space } from "antd";
-
-const items = [
-  {
-    label: (
-      <Link className="dropdown__link" to="/about">
-        Kompaniya haqida
-      </Link>
-    ),
-    key: "0",
-  },
-  {
-    label: (
-      <Link className="dropdown__link" to="/company_structure">
-        Korxona boshqaruvi
-      </Link>
-    ),
-    key: "1",
-  },
-  {
-    label: (
-      <Link className="dropdown__link" to="/news">
-        Yangiliklar
-      </Link>
-    ),
-    key: "2",
-  },
-];
+import { Dropdown, Space, Select } from "antd";
 
 export const Header = () => {
+  const { t, i18n } = useTranslation();
   const { close, isOpen, open } = useModal();
+
+  const handleLanguageChange = (value) => {
+    i18n.changeLanguage(value);
+  };
+
+  const items = [
+    {
+      label: (
+        <Link className="dropdown__link" to="/about">
+          {t("about")}
+        </Link>
+      ),
+      key: "0",
+    },
+    {
+      label: (
+        <Link className="dropdown__link" to="/company_structure">
+          {t("company_structure")}
+        </Link>
+      ),
+      key: "1",
+    },
+    {
+      label: (
+        <Link className="dropdown__link" to="/news">
+          {t("news")}
+        </Link>
+      ),
+      key: "2",
+    },
+  ];
+
   return (
-    <div className="header container">
-      <Link to="/">
-        <div className="header__logo">
-          <img className="logo" src={logo} alt="Logo" />
-        </div>
-      </Link>
-      <nav className="header__nav">
-        <Link className="header__link" to="/">
-          Bosh sahifa
-        </Link>
-        <Dropdown
-          className="dropdown"
-          menu={{
-            items,
-          }}
-        >
-          <a onClick={(e) => e.preventDefault()}>
-            <Space>
-              <p className="header__link">Kompaniya haqida</p>
-              <DownOutlined />
-            </Space>
-          </a>
-        </Dropdown>
-        <a
-          className="header__link"
-          href="https://jobs.adm.uz/vacancies"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Karyera
-        </a>
-        <Link className="header__link" to="/contact">
-          Kontaktlar
-        </Link>
-      </nav>
-
-      <div className="menu-container">
-        <button onClick={open} className="menu-button">
-          <FontAwesomeIcon icon={faBars} />
-        </button>
-
-        <Modal close={close} isOpen={isOpen}>
-          <div className="modal-header">
-            <button onClick={close} className="close-button">
-              <FontAwesomeIcon icon={faTimes} />
-            </button>
+    <div className="header__wrapper">
+      <div className="header container">
+        <Link to="/">
+          <div className="header__logo">
+            <img className="logo" src={logo} alt="Logo" />
           </div>
-          <ul className="menu-list">
-            <li className="menu-item">
-              <Link onClick={close} to="/">
-                Bosh sahifa
-              </Link>
-            </li>
-            <li className="menu-item">
-              <Link onClick={close} to="/about">
-                Kompaniya haqida
-              </Link>
-            </li>
-            <li className="menu-item">
-              <Link onClick={close} to="/company_structure">
-                Korxona boshqaruvi
-              </Link>
-            </li>
-            <li className="menu-item">
-              <Link onClick={close} to="/news">
-                Yangiliklar
-              </Link>
-            </li>
-            <li className="menu-item">
+        </Link>
+
+        <nav className="header__nav">
+          <Link className="header__link" to="/">
+            {t("home")}
+          </Link>
+          <Dropdown className="dropdown" menu={{ items }}>
+            <a onClick={(e) => e.preventDefault()}>
+              <Space>
+                <p className="header__link">{t("about")}</p>
+                <DownOutlined />
+              </Space>
+            </a>
+          </Dropdown>
+          <a
+            className="header__link"
+            href="https://jobs.adm.uz/vacancies"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("career")}
+          </a>
+          <Link className="header__link" to="/contact">
+            {t("contact")}
+          </Link>
+        </nav>
+
+        <Select
+          defaultValue={i18n.language}
+          onChange={handleLanguageChange}
+          style={{ width: 60 }}
+          options={[
+            { value: "uz", label: "UZ" },
+            { value: "ru", label: "RU" },
+            { value: "en", label: "EN" },
+          ]}
+        />
+
+        {/* Mobile menu */}
+        <div className="menu-container">
+          <button onClick={open} className="menu-button">
+            <FontAwesomeIcon icon={faBars} />
+          </button>
+
+          <Modal close={close} isOpen={isOpen}>
+            <div className="modal-header">
+              <button onClick={close} className="close-button">
+                <FontAwesomeIcon icon={faTimes} />
+              </button>
+            </div>
+            <ul className="menu-list">
+              <li className="menu-item">
+                <Link onClick={close} to="/">
+                  {t("home")}
+                </Link>
+              </li>
+              <li className="menu-item">
+                <Link onClick={close} to="/about">
+                  {t("about")}
+                </Link>
+              </li>
+              <li className="menu-item">
+                <Link onClick={close} to="/company_structure">
+                  {t("company_structure")}
+                </Link>
+              </li>
+              <li className="menu-item">
+                <Link onClick={close} to="/news">
+                  {t("news")}
+                </Link>
+              </li>
+              <li className="menu-item">
+                <a
+                  href="https://jobs.adm.uz/vacancies"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t("career")}
+                </a>
+              </li>
+              <li className="menu-item">
+                <Link onClick={close} to="/contact">
+                  {t("contact")}
+                </Link>
+              </li>
+            </ul>
+            <div className="contact-info-header">
+              <div className="contact-item-header">
+                <FontAwesomeIcon icon={faEnvelope} />
+                <span>info@adm-electrics.com</span>
+              </div>
+              <div className="contact-item-header">
+                <FontAwesomeIcon icon={faPhone} />
+                <span>+998 55 202 00 05</span>
+              </div>
+              <div className="contact-item-header">
+                <FontAwesomeIcon icon={faMapMarkerAlt} />
+                <span>{t("address")}</span>
+              </div>
+            </div>
+
+            <div className="header__socials">
               <a
-                href="https://jobs.adm.uz/vacancies"
+                className="header__badge"
+                href="https://www.facebook.com/admelectrics.uz"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Karyera
+                <img src={facebook} alt="Facebook" />
               </a>
-            </li>
-            <li className="menu-item">
-              <Link onClick={close} to="/contact">
-                Kontaktlar
-              </Link>
-            </li>
-          </ul>
-
-          <div className="contact-info-header">
-            <div className="contact-item-header">
-              <FontAwesomeIcon icon={faEnvelope} />
-              <span>info@adm-electrics.com</span>
+              <a
+                className="header__badge"
+                href="https://www.facebook.com/admelectrics.uz"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={instagram} alt="Instagram" />
+              </a>
+              <a
+                className="header__badge"
+                href="https://t.me/ADM_ELECTRICS_Jobs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={telegram} alt="Telegram" />
+              </a>
             </div>
-            <div className="contact-item-header">
-              <FontAwesomeIcon icon={faPhone} />
-              <span>+998 55 202 00 05</span>
-            </div>
-            <div className="contact-item-header">
-              <FontAwesomeIcon icon={faMapMarkerAlt} />
-              <span>Asaka tumani Kamolot MFY Marg'iloniy ko‘chasi, 65-uy</span>
-            </div>
-          </div>
-
-          <div className="header__socials">
-            <a
-              className="header__badge"
-              href="https://www.facebook.com/admelectrics.uz"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={facebook} alt="Facebook" />
-            </a>
-            <a
-              className="header__badge"
-              href="https://www.facebook.com/admelectrics.uz"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={instagram} alt="Instagram" />
-            </a>
-            <a
-              className="header__badge"
-              href="https://t.me/ADM_ELECTRICS_Jobs"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={telegram} alt="Telegram" />
-            </a>
-          </div>
-        </Modal>
+          </Modal>
+        </div>
       </div>
     </div>
   );

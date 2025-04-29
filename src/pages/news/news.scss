@@ -1,7 +1,10 @@
 .news {
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 90px;
+  margin-top: 100px !important;
+  padding-bottom: 40px;
+
+  @media (max-width: 930px) {
+    margin-top: 120px !important;
+  }
 }
 
 .news__title {
