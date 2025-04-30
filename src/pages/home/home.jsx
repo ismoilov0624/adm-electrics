@@ -3,20 +3,27 @@ import { HomeBanner } from "./components/banner/home-banner";
 import slider2 from "../../assets/images/home/slider2.jpeg";
 import "./home.scss";
 import { CommentSlider } from "./components/commentSlider/commentSlider";
-
 import { NewsBanner } from "../news/components/banner/news-banner";
 import { NewsCard } from "../news/components/card/news-card";
 import { Link } from "react-router-dom";
-import { newsData } from "../news/news-data";
-
 import { useScrollTop } from "../../hooks/useScrollTop";
-
 import { useTranslation } from "react-i18next";
+import { newsDataUz, newsDataRu, newsDataEn } from "../news/news-data";
 
 export const Home = () => {
-  const { t } = useTranslation();
-
+  const { t, i18n } = useTranslation();
   useScrollTop(0);
+
+  const lang = i18n.language;
+
+  let newsData;
+  if (lang === "uz") {
+    newsData = newsDataUz;
+  } else if (lang === "ru") {
+    newsData = newsDataRu;
+  } else {
+    newsData = newsDataEn;
+  }
 
   return (
     <div className="home">

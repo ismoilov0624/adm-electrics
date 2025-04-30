@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import { MainLayout } from "./layout/main-layout/main-layout";
 import { Home } from "./pages/home/home";
 import { About } from "./pages/about/about";
-import { Contact } from "./pages/contact/contact";
+import Contact from "./pages/contact/contact";
 import "./global.scss";
 import { Company_structure } from "./pages/company_structure/company_structure";
 import { News } from "./pages/news/news";

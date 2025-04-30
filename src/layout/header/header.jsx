@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./header.scss";
 import logo from "../../assets/images/home/logo.png";
@@ -21,15 +21,21 @@ import { Dropdown, Space, Select } from "antd";
 export const Header = () => {
   const { t, i18n } = useTranslation();
   const { close, isOpen, open } = useModal();
+  const location = useLocation();
 
   const handleLanguageChange = (value) => {
     i18n.changeLanguage(value);
   };
 
+  const isActive = (path) => location.pathname === path;
+
   const items = [
     {
       label: (
-        <Link className="dropdown__link" to="/about">
+        <Link
+          className={`dropdown__link ${isActive("/about") ? "active" : ""}`}
+          to="/about"
+        >
           {t("about")}
         </Link>
       ),
@@ -37,7 +43,12 @@ export const Header = () => {
     },
     {
       label: (
-        <Link className="dropdown__link" to="/company_structure">
+        <Link
+          className={`dropdown__link ${
+            isActive("/company_structure") ? "active" : ""
+          }`}
+          to="/company_structure"
+        >
           {t("company_structure")}
         </Link>
       ),
@@ -45,7 +56,10 @@ export const Header = () => {
     },
     {
       label: (
-        <Link className="dropdown__link" to="/news">
+        <Link
+          className={`dropdown__link ${isActive("/news") ? "active" : ""}`}
+          to="/news"
+        >
           {t("news")}
         </Link>
       ),
@@ -63,17 +77,32 @@ export const Header = () => {
         </Link>
 
         <nav className="header__nav">
-          <Link className="header__link" to="/">
+          <Link
+            className={`header__link ${isActive("/") ? "active" : ""}`}
+            to="/"
+          >
             {t("home")}
           </Link>
+
           <Dropdown className="dropdown" menu={{ items }}>
             <a onClick={(e) => e.preventDefault()}>
               <Space>
-                <p className="header__link">{t("about")}</p>
+                <p
+                  className={`header__link ${
+                    ["/about", "/company_structure", "/news"].includes(
+                      location.pathname
+                    )
+                      ? "active"
+                      : ""
+                  }`}
+                >
+                  {t("about")}
+                </p>
                 <DownOutlined />
               </Space>
             </a>
           </Dropdown>
+
           <a
             className="header__link"
             href="https://jobs.adm.uz/vacancies"
@@ -82,7 +111,11 @@ export const Header = () => {
           >
             {t("career")}
           </a>
-          <Link className="header__link" to="/contact">
+
+          <Link
+            className={`header__link ${isActive("/contact") ? "active" : ""}`}
+            to="/contact"
+          >
             {t("contact")}
           </Link>
         </nav>
@@ -112,22 +145,38 @@ export const Header = () => {
             </div>
             <ul className="menu-list">
               <li className="menu-item">
-                <Link onClick={close} to="/">
+                <Link
+                  onClick={close}
+                  className={isActive("/") ? "active" : ""}
+                  to="/"
+                >
                   {t("home")}
                 </Link>
               </li>
               <li className="menu-item">
-                <Link onClick={close} to="/about">
+                <Link
+                  onClick={close}
+                  className={isActive("/about") ? "active" : ""}
+                  to="/about"
+                >
                   {t("about")}
                 </Link>
               </li>
               <li className="menu-item">
-                <Link onClick={close} to="/company_structure">
+                <Link
+                  onClick={close}
+                  className={isActive("/company_structure") ? "active" : ""}
+                  to="/company_structure"
+                >
                   {t("company_structure")}
                 </Link>
               </li>
               <li className="menu-item">
-                <Link onClick={close} to="/news">
+                <Link
+                  onClick={close}
+                  className={isActive("/news") ? "active" : ""}
+                  to="/news"
+                >
                   {t("news")}
                 </Link>
               </li>
@@ -141,11 +190,16 @@ export const Header = () => {
                 </a>
               </li>
               <li className="menu-item">
-                <Link onClick={close} to="/contact">
+                <Link
+                  onClick={close}
+                  className={isActive("/contact") ? "active" : ""}
+                  to="/contact"
+                >
                   {t("contact")}
                 </Link>
               </li>
             </ul>
+
             <div className="contact-info-header">
               <div className="contact-item-header">
                 <FontAwesomeIcon icon={faEnvelope} />
