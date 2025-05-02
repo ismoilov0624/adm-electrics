@@ -194,3 +194,29 @@
   color: #555;
   font-family: "Roboto", sans-serif;
 }
+
+.partners {
+  padding: 40px 0;
+
+  .partners__title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #2c3e50;
+  }
+
+  .partner__slide {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    img {
+      max-height: 80px;
+      max-width: 100%;
+      object-fit: contain;
+      transition: filter 0.3s ease;
+    }
+  }
+}

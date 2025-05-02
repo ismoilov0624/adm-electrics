@@ -53,6 +53,7 @@ i18n
           goal3_title: "Mijozlar bilan ishlash",
           goal3_desc:
             "Mijozlarning fikr-mulohazalarini tinglash va ular asosida mahsulotlarimizni doimiy ravishda takomillashtirish.",
+          ourPartners: "Bizning hamkorlar",
           phone: "Telefon",
           email: "Elektron pochta",
           schedule: "Qabul kunlari",
@@ -164,6 +165,7 @@ i18n
           schedule: "Дни приёма",
           home: "Главная",
           management: "Управление предприятием",
+          ourPartners: "Наши партнеры",
           phone: "Телефон:",
           email: "Электронная почта:",
           schedule: "Дни приема:",
@@ -264,6 +266,7 @@ i18n
           goal3_title: "Customer Engagement",
           goal3_desc:
             "Continuously improving our products based on customer feedback and suggestions.",
+          ourPartners: "Our Partners",
           phone: "Phone",
           email: "Email",
           schedule: "Reception Days",
