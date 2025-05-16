@@ -49,7 +49,7 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className="bg-fixed1"></div>
+      {/* <div className="bg-fixed1"></div> */}
 
       <div className="comments container">
         <h2 className="comments__title">{t("productsTitle")}</h2>
@@ -57,7 +57,7 @@ export const Home = () => {
         <CommentSlider />
       </div>
 
-      <div className="bg-fixed2"></div>
+      {/* <div className="bg-fixed2"></div> */}
 
       <div className="news_section container">
         <h2 className="comments__title">{t("newsTitle")}</h2>
