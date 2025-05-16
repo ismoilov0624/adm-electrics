@@ -141,6 +141,9 @@
   height: 400px;
   position: relative;
   z-index: -1;
+  @media (max-width: 768px) {
+    background-attachment: scroll;
+  }
 }
 
 .bg-fixed2 {
@@ -153,4 +156,7 @@
   height: 400px;
   position: relative;
   z-index: -1;
+  @media (max-width: 768px) {
+    background-attachment: scroll;
+  }
 }
