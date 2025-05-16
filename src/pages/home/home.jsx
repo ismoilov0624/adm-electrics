@@ -49,33 +49,37 @@ export const Home = () => {
         </div>
       </div>
 
+      <div className="bg-fixed1"></div>
+
       <div className="comments container">
         <h2 className="comments__title">{t("productsTitle")}</h2>
 
         <CommentSlider />
+      </div>
 
-        <div className="news_section">
-          <h2 className="comments__title">{t("newsTitle")}</h2>
-          <div className="news_section__content">
-            <NewsBanner>
-              {newsData.slice(0, 4).map((item) => (
-                <NewsCard
-                  key={item.id}
-                  img={item.img}
-                  title={item.title}
-                  text={item.text}
-                >
-                  <Link to={`news-detail/${item.id}`} className="news__button">
-                    {t("readMore")}
-                  </Link>
-                </NewsCard>
-              ))}
-            </NewsBanner>
-          </div>
-          <Link className="news_link" to="/news">
-            {t("allNews")}
-          </Link>
+      <div className="bg-fixed2"></div>
+
+      <div className="news_section container">
+        <h2 className="comments__title">{t("newsTitle")}</h2>
+        <div className="news_section__content">
+          <NewsBanner>
+            {newsData.slice(0, 4).map((item) => (
+              <NewsCard
+                key={item.id}
+                img={item.img}
+                title={item.title}
+                text={item.text}
+              >
+                <Link to={`news-detail/${item.id}`} className="news__button">
+                  {t("readMore")}
+                </Link>
+              </NewsCard>
+            ))}
+          </NewsBanner>
         </div>
+        <Link className="news_link" to="/news">
+          {t("allNews")}
+        </Link>
       </div>
     </div>
   );
