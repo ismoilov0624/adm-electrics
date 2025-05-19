@@ -26,14 +26,11 @@ export const Header = () => {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  // Scroll event handler to toggle header visibility
   const controlHeader = () => {
     if (typeof window !== "undefined") {
       if (window.scrollY > lastScrollY && window.scrollY > 100) {
-        // scroll down
         setShowHeader(false);
       } else {
-        // scroll up
         setShowHeader(true);
       }
       setLastScrollY(window.scrollY);
