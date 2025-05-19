@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./header.scss";
@@ -22,6 +22,32 @@ export const Header = () => {
   const { t, i18n } = useTranslation();
   const { close, isOpen, open } = useModal();
   const location = useLocation();
+
+  const [showHeader, setShowHeader] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  // Scroll event handler to toggle header visibility
+  const controlHeader = () => {
+    if (typeof window !== "undefined") {
+      if (window.scrollY > lastScrollY && window.scrollY > 100) {
+        // scroll down
+        setShowHeader(false);
+      } else {
+        // scroll up
+        setShowHeader(true);
+      }
+      setLastScrollY(window.scrollY);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controlHeader);
+      return () => {
+        window.removeEventListener("scroll", controlHeader);
+      };
+    }
+  }, [lastScrollY]);
 
   const handleLanguageChange = (value) => {
     i18n.changeLanguage(value);
@@ -68,7 +94,7 @@ export const Header = () => {
   ];
 
   return (
-    <div className="header__wrapper">
+    <div className={`header__wrapper ${showHeader ? "visible" : "hidden"}`}>
       <div className="header container">
         <Link to="/">
           <div className="header__logo">

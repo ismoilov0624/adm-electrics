@@ -4,6 +4,19 @@
   width: 100vw;
   top: 0;
   z-index: 2;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+
+  &.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &.visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 
 .header {
@@ -86,100 +99,88 @@
 }
 
 .anticon svg {
-  display: none;
+  display: block;
 }
 
 .menu-container {
-  @media (min-width: 1121px) {
-    display: none;
+  display: none;
+
+  @media (max-width: 1120px) {
+    display: flex;
   }
-}
 
-.menu-button {
-  padding: 0.5rem;
-  font-size: 1.5rem;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-.modal-header {
-  margin-top: 7px;
-  display: flex;
-  justify-content: flex-end;
-
-  .close-button {
-    font-size: 1.5rem;
+  .menu-button {
     background-color: transparent;
     border: none;
+    font-size: 22px;
     cursor: pointer;
+    color: #3d3d3d;
   }
 }
 
 .menu-list {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-bottom: 20px;
-}
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
-.menu-item {
-  font-size: 20px;
-  color: #3d3d3d;
-  font-weight: 500;
-  transition: color 0.3s ease-in-out;
-  cursor: pointer;
+  .menu-item {
+    margin-bottom: 16px;
 
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-}
-.header__socials {
-  position: absolute;
-  bottom: 50px;
-  display: flex;
-  gap: 1rem;
-  margin-top: 20px;
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      color: #000;
+      font-weight: 500;
 
-  .header__badge {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-color: #f1f1f1;
-    border-radius: 50%;
-    padding: 10px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-
-    &:hover {
-      transform: scale(1.1);
-      background-color: #fc3e04;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
+      &.active {
+        color: #fc3e04;
+        text-decoration: underline;
+      }
     }
   }
 }
 
 .contact-info-header {
+  margin-top: 30px;
+  .contact-item-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+
+    svg {
+      color: #fc3e04;
+    }
+
+    span {
+      font-size: 16px;
+      color: #3d3d3d;
+    }
+  }
+}
+
+.header__socials {
+  margin-top: 30px;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  gap: 15px;
+
+  .header__badge {
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
 }
 
-.contact-item-header {
+.modal-header {
   display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-}
+  justify-content: flex-end;
 
-.contact-item-header span {
-  color: #333;
-}
-
-.modal-panel {
-  z-index: 999;
-  position: relative;
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: #000;
+  }
 }
