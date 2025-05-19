@@ -1,0 +1,175 @@
+.partners {
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+
+  // Optional background pattern
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(
+        circle at 25px 25px,
+        rgba(0, 0, 0, 0.02) 2%,
+        transparent 0%
+      ),
+      radial-gradient(
+        circle at 75px 75px,
+        rgba(0, 0, 0, 0.02) 2%,
+        transparent 0%
+      );
+    background-size: 100px 100px;
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+  // Section title styling
+  .partners__title {
+    text-align: center;
+    font-size: clamp(24px, 5vw, 32px);
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #2c3e50;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+
+    // Decorative underline
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(
+        90deg,
+        rgba(44, 62, 80, 0.2),
+        rgba(44, 62, 80, 0.8),
+        rgba(44, 62, 80, 0.2)
+      );
+      border-radius: 3px;
+    }
+  }
+
+  // Partner slide container
+  .partner__slide {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+
+    // Subtle border
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 16px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      pointer-events: none;
+    }
+
+    // Hover glow effect
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0.8) 0%,
+        rgba(255, 255, 255, 0) 70%
+      );
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    // Partner logo image - removed grayscale filter
+    img {
+      height: 70px;
+      max-width: 100%;
+      object-fit: contain;
+      opacity: 1; // Full opacity instead of 0.75
+      transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        opacity 0.4s ease;
+      user-select: none;
+      will-change: transform, opacity;
+    }
+
+    // Hover state styling
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 30px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.05);
+
+      &::before {
+        opacity: 1;
+      }
+
+      img {
+        transform: scale(1.12);
+      }
+    }
+
+    // Active state for touch devices
+    &:active {
+      transform: translateY(-4px);
+      transition: transform 0.2s;
+    }
+  }
+
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    padding: 40px 0;
+
+    .partners__title {
+      margin-bottom: 30px;
+
+      &::after {
+        width: 40px;
+      }
+    }
+
+    .partner__slide {
+      height: 100px;
+      padding: 15px;
+
+      img {
+        height: 50px;
+      }
+    }
+  }
+}
+
+// Optional: Add this if you're using a slider library like Slick
+.partners__slider {
+  margin: 0 -10px;
+
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+
+  .slick-dots {
+    bottom: -30px;
+
+    li button:before {
+      font-size: 8px;
+      color: rgba(44, 62, 80, 0.4);
+    }
+
+    li.slick-active button:before {
+      color: rgba(44, 62, 80, 0.8);
+    }
+  }
+}

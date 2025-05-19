@@ -63,6 +63,9 @@ i18n
           email: "Elektron pochta:",
           schedule: "Qabul kunlari:",
           //structure
+          ourEmployees: "Bizning jamoa",
+          allEmployees: "Barcha xodimlar",
+
           company_structure: "Korxona boshqaruvi",
           positions: {
             ceo: "Bosh direktor",
@@ -170,6 +173,8 @@ i18n
           email: "Электронная почта:",
           schedule: "Дни приема:",
           //structure
+          ourEmployees: "Наша команда",
+          allEmployees: "Все сотрудники",
           company_structure: "Структура компании",
           positions: {
             ceo: "Генеральный директор",
@@ -276,6 +281,8 @@ i18n
           email: "Email:",
           schedule: "Schedule:",
           //srtucture
+          ourEmployees: "Our team",
+          allEmployees: "All employees",
           company_structure: "Company Structure",
           positions: {
             ceo: "Chief Executive Officer",

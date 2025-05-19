@@ -5,15 +5,7 @@ import { useTranslation } from "react-i18next";
 import { useScrollTop } from "../../hooks/useScrollTop";
 import "./about.scss";
 import adm from "../../assets/images/about/adm.jpg";
-
-import kyungshin from "../../assets/images/about/Kyungshin.jpg";
-import emdep from "../../assets/images/about/emdep.png";
-import infac from "../../assets/images/about/infac.jpg";
-import autoware from "../../assets/images/about/autoware.png";
-import doowon from "../../assets/images/about/doowon.jpg";
-import ap from "../../assets/images/about/ap.png";
-import ket from "../../assets/images/about/ket.webp";
-import inzi from "../../assets/images/about/inzi.jpg";
+import { PartnersSlider } from "../../components/partners-slider/partners-slider";
 
 export const About = () => {
   useScrollTop(0);
@@ -36,8 +28,6 @@ export const About = () => {
       description: t("goal3_desc"),
     },
   ];
-
-  const partners = [kyungshin, emdep, infac, autoware, doowon, ap, inzi, ket];
 
   const sliderSettings = {
     dots: false,
@@ -97,16 +87,7 @@ export const About = () => {
         </div>
       </div>
 
-      <div className="partners">
-        <h2 className="partners__title">{t("ourPartners")}</h2>
-        <Slider {...sliderSettings}>
-          {partners.map((logo, i) => (
-            <div className="partner__slide" key={i}>
-              <img src={logo} alt={`partner-${i}`} />
-            </div>
-          ))}
-        </Slider>
-      </div>
+      <PartnersSlider title={t("ourPartners")} />
     </div>
   );
 };

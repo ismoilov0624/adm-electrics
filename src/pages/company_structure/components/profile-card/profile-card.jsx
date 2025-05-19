@@ -20,22 +20,22 @@ export const ProfileCard = ({
         <h2 className="name">{name}</h2>
         <p className="position">{position}</p>
         <div className="contact-info">
-          <div className="contact-item">
+          {/* <div className="contact-item">
             <span className="label">{t("phone")}</span>
             <a href={`tel:${phone}`} className="value">
               {phone}
             </a>
-          </div>
+          </div> */}
           <div className="contact-item">
             <span className="label">{t("email")}</span>
             <a href={`mailto:${email}`} className="value">
               {email}
             </a>
           </div>
-          <div className="contact-item">
+          {/* <div className="contact-item">
             <span className="label">{t("schedule")}</span>
             <span className="value">{schedule}</span>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
