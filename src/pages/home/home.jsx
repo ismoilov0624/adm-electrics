@@ -16,8 +16,7 @@ import Valisher from "../../assets/images/company-structure/Valisher.jpg";
 import profileImg from "../../assets/images/company-structure/img.jpg";
 import { PartnersSlider } from "../../components/partners-slider/partners-slider";
 import AboutCompanySection from "./components/sections/about-company-section/about-company-section";
-import ProductionHighlights from "./components/sections/production-hightlights/production-highlights";
-import ForecastSection from "./components/sections/forecast-section/forecast-section";
+import CarPartsViewer from "./components/sections/parts-diagram/parts-diagram";
 
 export const Home = () => {
   const { t, i18n } = useTranslation();
@@ -77,6 +76,8 @@ export const Home = () => {
         <CommentSlider />
       </div>
 
+      <CarPartsViewer />
+
       <div className="employees_section container">
         <h2 className="comments__title">{t("ourEmployees")}</h2>
         <div className="company__structure__wrapper">
@@ -111,6 +112,7 @@ export const Home = () => {
           {t("allNews")}
         </Link>
       </div>
+
       <PartnersSlider title={t("ourPartners")} />
     </div>
   );

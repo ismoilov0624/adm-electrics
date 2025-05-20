@@ -14,16 +14,23 @@ const products = [
     name: "Main Harness",
     image: main_harness,
     description:
-      "High-quality main wiring harness designed for automotive applications. Features durable insulation and precise connections.",
-    specifications: ["Length: 2.5m", "Connectors: 12"],
+      "Main wiring harness connecting all major electrical components",
+    specifications: [
+      "M05, GM04, GM01: Engine control connections",
+      "ICU-D, ICU-E: Interior control unit connections",
+      "M41, M31: Power distribution connections",
+    ],
   },
   {
     id: 2,
     name: "Front Harness",
     image: front_harness,
-    description:
-      "Advanced version of our main harness with improved durability and additional connection points for expanded functionality.",
-    specifications: ["Length: 3m", "Connectors: 16"],
+    description: "Front harness for engine and front electrical components",
+    specifications: [
+      "JE31, E336, JE32: Engine sensor connections",
+      "ICU-A, ICU-B: Control unit connections",
+      "E/R Junction Block: Engine room junction conn  ections",
+    ],
   },
   {
     id: 3,
@@ -75,7 +82,7 @@ const ProductModal = ({ product, isOpen, onClose }) => {
             <p className="product-modal__description">{product.description}</p>
 
             <div className="product-modal__specifications">
-              <h3 className="product-modal__subtitle">Specifications</h3>
+              <h3 className="product-modal__subtitle">Key Connections:</h3>
               <ul className="product-modal__spec-list">
                 {product.specifications &&
                   product.specifications.map((spec, index) => (
