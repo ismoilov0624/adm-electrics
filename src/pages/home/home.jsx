@@ -15,6 +15,9 @@ import Islomjon from "../../assets/images/company-structure/islomjon.jpg";
 import Valisher from "../../assets/images/company-structure/Valisher.jpg";
 import profileImg from "../../assets/images/company-structure/img.jpg";
 import { PartnersSlider } from "../../components/partners-slider/partners-slider";
+import AboutCompanySection from "./components/sections/about-company-section/about-company-section";
+import ProductionHighlights from "./components/sections/production-hightlights/production-highlights";
+import ForecastSection from "./components/sections/forecast-section/forecast-section";
 
 export const Home = () => {
   const { t, i18n } = useTranslation();
@@ -67,25 +70,7 @@ export const Home = () => {
     <div className="home">
       <HomeBanner />
 
-      <div className="about_company container">
-        <div className="about_company__imgbox">
-          <img
-            className="about_company__img"
-            src={slider2}
-            alt={t("aboutCompanyAlt")}
-          />
-        </div>
-        <div className="about_company__content">
-          <h2 className="about_company__title">{t("aboutCompanyTitle")}</h2>
-          <p className="about_company__text">{t("aboutCompanyText")}</p>
-          <ul className="about_company__list">
-            <li>{t("companyProduct1")}</li>
-            <li>{t("companyProduct2")}</li>
-            <li>{t("companyProduct3")}</li>
-          </ul>
-          <p className="about_company__text">{t("aboutCompanyDetails")}</p>
-        </div>
-      </div>
+      <AboutCompanySection />
 
       <div className="comments container">
         <h2 className="comments__title">{t("productsTitle")}</h2>

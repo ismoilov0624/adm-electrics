@@ -25,12 +25,11 @@ export const NewsDetail = () => {
 
   return (
     <div className="news__detail__wrapper container">
-      <div className="breadcrumb">
-        <Link className="home_page_link" to="/">
-          {t("home")}
-        </Link>
-        <span> / {t("newsTitle")}</span>
-      </div>
+      <Link className="home_page_link" to="/">
+        {t("home")}
+      </Link>
+      <span> / {t("newsTitle")}</span>
+
       <div className="news__detail__box">
         <div className="news__related">
           <h3 className="news__related__title">{t("otherNews")}</h3>

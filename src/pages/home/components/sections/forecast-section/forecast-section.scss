@@ -1,0 +1,173 @@
+// Colors
+$primary-color: #f25f3a;
+$secondary-color: #2c3e50;
+$text-color: #555;
+$light-bg: #f9f9f9;
+$white: #ffffff;
+$border-color: #eaeaea;
+
+// Spacing
+$container-width: 1200px;
+$container-padding: 1.25rem;
+
+// Border
+$border-radius: 0.5rem;
+
+// Shadows
+$box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.08);
+$box-shadow-hover: 0 0.9375rem 2.5rem rgba(0, 0, 0, 0.1);
+
+// Transitions
+$transition: all 0.3s ease;
+
+// Responsive breakpoints
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: 576px) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media (max-width: 992px) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+// Flexbox center
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Flexbox space between
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forecast-section {
+  padding: 5rem 0;
+  background-color: $white;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+
+    @include respond-to(tablet) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__features {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+}
+
+.feature {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+
+  &__icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba($primary-color, 0.1);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: $primary-color;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: $secondary-color;
+    margin-bottom: 0.5rem;
+  }
+
+  &__text {
+    color: $text-color;
+    line-height: 1.6;
+  }
+}
+
+.forecast-card {
+  background-color: $white;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  padding: 1.5rem;
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: $secondary-color;
+    margin-bottom: 1.5rem;
+  }
+
+  &__footer {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid $border-color;
+  }
+
+  &__note {
+    font-style: italic;
+    color: $text-color;
+  }
+}
+
+.forecast-item {
+  margin-bottom: 1.5rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+
+  &__year {
+    font-weight: 500;
+    color: $text-color;
+  }
+
+  &__value {
+    font-weight: 700;
+    color: $secondary-color;
+  }
+
+  &__progress-container {
+    width: 100%;
+    height: 0.625rem;
+    background-color: $light-bg;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  &__progress {
+    height: 100%;
+    background-color: $primary-color;
+    border-radius: 1rem;
+  }
+}

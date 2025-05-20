@@ -21,6 +21,64 @@ i18n
           contact: "Kontaktlar",
           career: "Karyera",
           address: "Asaka district, Kamolot MFY, Marg'iloniy street, house 65",
+
+          about_title: "Kompaniyamiz haqida",
+          text_1:
+            "Sim to‘plamlarimiz ilg‘or texnologiyalar va qat’iy sifat standartlari asosida ishlab chiqariladi. Bu har bir mahsulotning ishonchliligi va uzoq xizmat muddatini ta'minlaydi.",
+          text_2:
+            "Biz texnologiyalarni doimiy ravishda yangilab, takomillashtirib boramiz. Asosiy qadriyatlarimiz — mas’uliyat, sifat va mijozlarga e’tibor.",
+          production: "Ishlab chiqarish",
+          production_text: "4,500 m² ishlab chiqarish maydoni",
+          capacity: "Quvvat",
+          capacity_text: "Yiliga 100,000+ to‘plam",
+          growth: "O‘sish",
+          growth_text: "20% o‘sish rejalashtirilgan",
+          established: "Asos solingan sana: 02.06.2023",
+          area: "Maydoni: 15,000 m²",
+          learn_more: "Biz haqimizda batafsil",
+
+          forecast_title: "Yillik ishlab chiqarish prognozi",
+          forecast_growth_title: "O‘sish rejalashtirilmoqda",
+          forecast_growth_text:
+            "Barqaror o‘sishni ta’minlash uchun kompaniyamiz innovatsiyalar, bozorni kengaytirish va xodimlarga sarmoya kiritish strategiyasini ishlab chiqqan.",
+          forecast_quality_title: "Sifat va innovatsiyalar",
+          forecast_quality_text:
+            "Zamonaviy texnologiyalarni joriy etish mahsulot sifati va samaradorligini oshirishga xizmat qiladi.",
+          forecast_people_title: "Xodimlarga investitsiya",
+          forecast_people_text:
+            "Xodimlarni o‘qitish va ularning malakasini oshirish bizning uzoq muddatli muvaffaqiyat strategiyamizning asosi hisoblanadi.",
+          forecast_chart_title: "Ishlab chiqarish o‘sish prognozi",
+          forecast_footer_note:
+            "Bizning ustuvorligimiz – sifat, innovatsiya va ishonch asosida barqaror rivojlanish.",
+
+          productionHighlights: {
+            title: "Ishlab chiqarish yutuqlari",
+            subtitle:
+              "Zamonaviy texnologiyalar bilan jihozlangan korxonamiz eng yuqori sifatli mahsulotlarni taqdim etadi",
+            cards: {
+              annualProduction: {
+                title: "Yillik ishlab chiqarish",
+                text: "ADM Electrics zavodi yiliga 100 000 dan ortiq to‘plam ishlab chiqarishga tayyor. Yangi lokallashtirish rejalari asosida bu ko‘rsatkich yaqin yillarda 20% dan ortiq o‘sishi kutilmoqda. Yangi loyihalar bilan ishlab chiqarish 50% ga oshiriladi.",
+              },
+              facility: {
+                title: "Ishlab chiqarish hududi",
+                text: "Bizning ishlab chiqarish ob'ektimiz Asaka sanoat zonasida joylashgan bo‘lib, qulay logistika va asosiy hamkorlarga yaqin joylashuvi bilan ajralib turadi. Umumiy maydoni 15 000 m², ishlab chiqarish maydoni esa 4 500 m² ni tashkil etadi.",
+              },
+              start: {
+                title: "Ishlab chiqarishni boshlanishi",
+                text: "Doimiy ishlab chiqarish 2024-yil 15-apreldan boshlandi. Bu muhim bosqich tayyorgarlik ishlarining yakunlangani va to‘liq miqyosdagi ishlab chiqarishni boshlanishini bildiradi.",
+              },
+            },
+          },
+
+          yearsExperience: "Tajriba yillari",
+          projectsCompleted: "Bajarilgan loyihalar",
+          teamMembers: "Jamoa a'zolari",
+          countries: "Qamrab olingan davlatlar",
+          ourMission: "Bizning misiya",
+          missionStatement:
+            "Missiyamiz – avtomobil, sanoat va boshqa sohalar uchun yuqori sifatli, xavfsiz va innovatsion sim to‘plamlarini (wiring harness) ishlab chiqish va yetkazib berish orqali mijozlarimiz ehtiyojlarini qondirish, zamonaviy texnologiyalar asosida ishonchli mahsulotlar yaratish va hamkorlikda barqaror taraqqiyotga erishish.",
+
           aboutCompanyTitle: "“ADM ELECTRICS” MChJ",
           aboutCompanyText:
             "“ADM ELECTRICS” quyidagi yo‘nalishlarda faoliyat yuritadi:",
@@ -101,7 +159,7 @@ i18n
             },
             legalText:
               "ADM ELECTRICS O‘zbekiston Respublikasi hududida o‘z faoliyatini O‘zbekiston Respublikasi qonunchiligiga muvofiq amalga oshiradi.",
-            rights: "©2024 Adm Electrics | Barcha huquqlar himoyalangan.",
+            rights: "©2025 Adm Electrics | Barcha huquqlar himoyalangan.",
           },
           contact_page: {
             breadcrumb: "Kontaktlar",
@@ -131,6 +189,64 @@ i18n
           contact: "Контакты",
           career: "Карьера",
           address: "Улица Маргилонская, дом 65, Камолот МФЙ, район Асака",
+
+          about_title: "О нашей компании",
+          text_1:
+            "Наши жгуты проводов производятся с использованием передовых технологий и строгих стандартов качества. Это обеспечивает высокую надежность и длительный срок службы каждого изделия.",
+          text_2:
+            "Мы стремимся предоставлять клиентам лучшее, постоянно обновляя и совершенствуя наши технологии. Наши основные ценности — ответственность, качество и ориентация на клиента.",
+          production: "Производство",
+          production_text: "Производственная площадь 4,500 м²",
+          capacity: "Мощность",
+          capacity_text: "100,000+ комплектов в год",
+          growth: "Рост",
+          growth_text: "Планируется рост на 20%",
+          established: "Основано: 02.06.2023",
+          area: "Площадь: 15,000 м²",
+          learn_more: "Узнать больше о нас",
+
+          forecast_title: "Прогноз годового производства",
+          forecast_growth_title: "Планирование роста",
+          forecast_growth_text:
+            "Для обеспечения стабильного роста бизнеса наша компания разработала стратегию, ориентированную на инновации, расширение рынка и инвестиции в персонал.",
+          forecast_quality_title: "Качество и инновации",
+          forecast_quality_text:
+            "Внедрение современных технологий для повышения качества продукции и эффективности операций — основа нашей бизнес-стратегии.",
+          forecast_people_title: "Инвестиции в людей",
+          forecast_people_text:
+            "Обучение сотрудников и развитие их профессиональных навыков — ключевой элемент нашей стратегии долгосрочного успеха.",
+          forecast_chart_title: "Прогноз роста производства",
+          forecast_footer_note:
+            "Наш приоритет — устойчивое развитие, основанное на качестве, инновациях и доверии.",
+
+          productionHighlights: {
+            title: "Основные моменты производства",
+            subtitle:
+              "Наше современное предприятие оснащено новейшими технологиями для обеспечения продукции самого высокого качества",
+            cards: {
+              annualProduction: {
+                title: "Годовое производство",
+                text: "Завод ADM Electrics готов производить более 100 000 комплектов в год. Согласно новым планам локализации, этот показатель вырастет более чем на 20% в ближайшие годы. С новыми проектами производство планируется увеличить на 50%.",
+              },
+              facility: {
+                title: "Производственное помещение",
+                text: "Наше производство расположено в промышленной зоне Асака, что обеспечивает удобную логистику и близость к ключевым партнерам. Общая площадь составляет 15 000 м², из которых 4 500 м² — производственные площади.",
+              },
+              start: {
+                title: "Начало производства",
+                text: "Регулярное производство началось 15.04.2024. Этот этап символизирует завершение подготовительных работ и запуск масштабного производства для удовлетворения растущих потребностей партнеров.",
+              },
+            },
+          },
+
+          yearsExperience: "Годы опыта",
+          projectsCompleted: "Выполненные проекты",
+          teamMembers: "Члены команды",
+          countries: "Охваченные страны",
+          ourMission: "Наша миссия",
+          missionStatement:
+            "Наша миссия – разрабатывать и поставлять высококачественные, безопасные и инновационные жгуты проводов (wiring harness) для автомобильной, промышленной и других отраслей, удовлетворяя потребности клиентов, создавая надёжные продукты на основе современных технологий и обеспечивая устойчивое развитие в сотрудничестве с партнёрами.",
+
           aboutCompanyTitle: "“ADM ELECTRICS” MChJ",
           aboutCompanyText:
             "“ADM ELECTRICS” занимается следующими направлениями:",
@@ -141,7 +257,7 @@ i18n
           companyProduct3:
             "Поставка высококачественной продукции на местные и зарубежные рынки.",
           aboutCompanyDetails:
-            "Компания была основана в 2023 году и расположена на земельном участке площадью 1,4 гектара в городе Асака, Андиджанская область. Начало серийного производства запчастей намечено на 15 апреля 2024 года.",
+            "Компания была основана в 2023 году и расположена на земельном участке площадью 1,4 гектара в городе Асака, Андиджанская область. Начало серийного производства запчастей намечено на 15 апреля 5 года.",
           productsTitle: "Продукция",
           newsTitle: "Новости",
           readMore: "Подробнее",
@@ -210,7 +326,7 @@ i18n
             },
             legalText:
               "ADM ELECTRICS осуществляет свою деятельность на территории Республики Узбекистан в соответствии с законодательством Республики Узбекистан.",
-            rights: "©2024 Adm Electrics | Все права защищены.",
+            rights: "©2025 Adm Electrics | Все права защищены.",
           },
           contact_page: {
             breadcrumb: "Контакты",
@@ -240,6 +356,64 @@ i18n
           contact: "Contact",
           career: "Career",
           address: "Asaka district, Kamolot MFY, Marg'iloniy street, house 65",
+
+          about_title: "About Our Company",
+          text_1:
+            "Our wire harnesses are manufactured using advanced technologies and strict quality standards. This ensures high reliability and long service life of each product. Each wire harness meets international and industry safety and quality standards.",
+          text_2:
+            "We strive to provide our customers with the best by constantly updating and improving our technologies. Our core values are responsibility, quality and customer focus.",
+          production: "Production",
+          production_text: "4,500 m² production area",
+          capacity: "Capacity",
+          capacity_text: "100,000+ sets per year",
+          growth: "Growth",
+          growth_text: "20% increase planned",
+          established: "Established: 02.06.2023",
+          area: "Area: 15,000 m²",
+          learn_more: "Learn More About Us",
+
+          forecast_title: "Forecast of Annual Production",
+          forecast_growth_title: "Planning for Growth",
+          forecast_growth_text:
+            "To ensure stable business growth, our company has developed a strategy focused on innovation, market expansion, and investment in personnel.",
+          forecast_quality_title: "Quality and Innovation",
+          forecast_quality_text:
+            "Implementing modern technologies to enhance product quality and operational efficiency is at the core of our business strategy.",
+          forecast_people_title: "Investment in People",
+          forecast_people_text:
+            "Training employees and developing their professional skills is a key component of our long-term success strategy.",
+          forecast_chart_title: "Production Growth Forecast",
+          forecast_footer_note:
+            "Our priority is sustainable development based on quality, innovation, and trust.",
+
+          productionHighlights: {
+            title: "Production Highlights",
+            subtitle:
+              "Our state-of-the-art facility is equipped with the latest technology to ensure the highest quality products",
+            cards: {
+              annualProduction: {
+                title: "Annual Production",
+                text: "Our ADM Electrics factory is ready to produce over 100,000 sets per year. According to the new localization plans, this figure will increase by more than 20% in the coming years. With new projects, production is planned to grow by 50%.",
+              },
+              facility: {
+                title: "Production Facility",
+                text: "Our production facility is located in the Asaka Industrial Zone, which provides convenient logistics and proximity to key partners. With a total area of 15,000 m² and production area of 4,500 m², we have ample space for growth.",
+              },
+              start: {
+                title: "Start of Production",
+                text: "Regular production started on 15.04.2024. This milestone symbolizes the completion of preparatory work and the start of full-scale production to meet the growing needs of our partners.",
+              },
+            },
+          },
+
+          yearsExperience: "Years of Experience",
+          projectsCompleted: "Projects Completed",
+          teamMembers: "Team Members",
+          countries: "Countries Reached",
+          ourMission: "Our Mission",
+          missionStatement:
+            "Our mission is to design and deliver high-quality, safe, and innovative wiring harness solutions for the automotive, industrial, and other sectors — meeting customer needs, producing reliable products based on modern technologies, and achieving sustainable growth through strong partnerships.",
+
           aboutCompanyTitle: "“ADM ELECTRICS” LLC",
           aboutCompanyText: "“ADM ELECTRICS” operates in the following areas:",
           companyProduct1:
@@ -318,7 +492,7 @@ i18n
             },
             legalText:
               "ADM ELECTRICS operates in the territory of the Republic of Uzbekistan in accordance with the legislation of the Republic of Uzbekistan.",
-            rights: "©2024 Adm Electrics | All rights reserved.",
+            rights: "©2025 Adm Electrics | All rights reserved.",
           },
           contact_page: {
             breadcrumb: "Contact",

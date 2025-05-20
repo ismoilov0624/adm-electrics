@@ -3,9 +3,10 @@ import Slider from "react-slick";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import "./commentSlider.scss";
 import main_harness from "../../../../assets/images/home/main-harness.png";
-import main_harness2 from "../../../../assets/images/home/main-harness2.png";
 import front_harness from "../../../../assets/images/home/front-harness.png";
-import front_harness2 from "../../../../assets/images/home/front-harness2.png";
+import door_harness from "../../../../assets/images/home/door-harness.png";
+import bumper_harness from "../../../../assets/images/home/bumper-harness.png";
+import battery_harness from "../../../../assets/images/home/battery-harness.png";
 
 const products = [
   {
@@ -18,24 +19,32 @@ const products = [
   },
   {
     id: 2,
-    name: "Main Harness2",
-    image: main_harness2,
+    name: "Front Harness",
+    image: front_harness,
     description:
       "Advanced version of our main harness with improved durability and additional connection points for expanded functionality.",
     specifications: ["Length: 3m", "Connectors: 16"],
   },
   {
     id: 3,
-    name: "Front Harness",
-    image: front_harness,
+    name: "Door Harness",
+    image: door_harness,
     description:
       "Specialized front wiring harness designed for headlight and sensor connections with waterproof sealing.",
     specifications: ["Length: 1.8m", "Connectors: 8"],
   },
   {
     id: 4,
-    name: "Front Harness2",
-    image: front_harness2,
+    name: "Bumper Harness",
+    image: bumper_harness,
+    description:
+      "Specialized front wiring harness designed for headlight and sensor connections with waterproof sealing.",
+    specifications: ["Length: 1.8m", "Connectors: 8"],
+  },
+  {
+    id: 5,
+    name: "Battery Harness",
+    image: battery_harness,
     description:
       "Premium front harness with enhanced electromagnetic interference protection and quick-connect terminals.",
     specifications: ["Length: 2m", "Connectors: 10"],
