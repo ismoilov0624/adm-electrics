@@ -35,14 +35,14 @@ export const Home = () => {
 
   const featuredEmployees = [
     {
-      image: Abduraxmon,
+      image: profileImg,
       name: "Yakubov Abduraxmon Sirojiddinovich",
       position: t("positions.ceo"),
       email: "abduraxmon.yakubov@adm-electrics.com",
       schedule: `${t("schedule")}: Dushanba 09:00 - 11:00`,
     },
     {
-      image: Islomjon,
+      image: profileImg,
       name: "Islomjon Tuxtaboev Ikromjonovich",
       position: t("positions.deputy_production"),
       email: "islomjon.tukhtaboev@adm-electrics.com",

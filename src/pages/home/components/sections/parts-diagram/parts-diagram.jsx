@@ -1,12 +1,25 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import "./parts-diagram.scss";
+import main_actual from "../../../../../assets/images/home/main-harness.png";
+import main_diagramm from "../../../../../assets/images/home/main-diagramm.jpg";
+import front_actual from "../../../../../assets/images/home/front-harness.png";
+import front_diagramm from "../../../../../assets/images/home/front-diagramm.jpg";
+import floor_actual from "../../../../../assets/images/home/floor-harness.png";
+import floor_diagramm from "../../../../../assets/images/home/floor-diagramm.jpg";
+import doors_actual from "../../../../../assets/images/home/door-harness.png";
+import door_diagramm from "../../../../../assets/images/home/door-diagramm.jpg";
+import front_bumper_actual from "../../../../../assets/images/home/front-bumper.png";
+import front_bumper_diagramm from "../../../../../assets/images/home/front-bumper-diagramm.jpg";
+import rear_bumper_actual from "../../../../../assets/images/home/rear-bumper.png";
+import rear_bumper_diagramm from "../../../../../assets/images/home/rear-bumper-diagramm.jpg";
 
 const CarPartsViewer = () => {
+  const { t } = useTranslation();
   const [activeCategory, setActiveCategory] = useState("Main Wiring harness");
   const [selectedPart, setSelectedPart] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
 
-  // Check if the screen is mobile size
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
@@ -20,92 +33,129 @@ const CarPartsViewer = () => {
     };
   }, []);
 
+  // Define categories with translation keys
   const categories = [
-    "Main Wiring harness",
-    "Front Wiring harness",
-    "Floor Wiring harness",
-    "Door Wiring harness",
-    "Front Bumper harness",
-    "Rear Bumper harness",
+    { id: "Main Wiring harness", translationKey: "mainCategory" },
+    { id: "Front Wiring harness", translationKey: "frontCategory" },
+    { id: "Floor Wiring harness", translationKey: "floorCategory" },
+    { id: "Door Wiring harness", translationKey: "doorCategory" },
+    { id: "Front Bumper harness", translationKey: "frontBumperCategory" },
+    { id: "Rear Bumper harness", translationKey: "rearBumperCategory" },
   ];
 
+  // Define parts with translation keys for descriptions
   const parts = [
     {
       id: 1,
       name: "Main Wiring harness",
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-T3wKczx9sjaY2RtLIgMXpD15Laqs9s.png",
-      realImage:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/front-harness-7XBJ24BU9gNElKnc1tAmW6FbzJSqVs.png",
+      nameKey: "mainCategory",
+      image: main_diagramm,
+      realImage: main_actual,
       x: 65,
       y: 43,
       category: "Main Wiring harness",
       description:
         "Main wiring harness connecting all major electrical components",
+      descriptionKey: "mainDescription",
     },
     {
       id: 2,
       name: "Front Wiring harness",
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-v1qYnf62QQizg2LdKE2q3NMs4NPLKJ.png",
-      realImage:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/front-harness-7XBJ24BU9gNElKnc1tAmW6FbzJSqVs.png",
+      nameKey: "frontCategory",
+      image: front_diagramm,
+      realImage: front_actual,
       x: 75,
       y: 55,
       category: "Front Wiring harness",
       description: "Front harness for engine and front electrical components",
+      descriptionKey: "frontDescription",
     },
     {
       id: 3,
       name: "Floor Wiring harness",
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-YPIt6ItJ8bVjcLHgj2bn3bguQMXDjR.png",
-      realImage:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/front-harness-7XBJ24BU9gNElKnc1tAmW6FbzJSqVs.png",
+      nameKey: "floorCategory",
+      image: floor_diagramm,
+      realImage: floor_actual,
       x: 40,
       y: 55,
       category: "Floor Wiring harness",
       description: "Floor harness connecting underbody electrical components",
+      descriptionKey: "floorDescription",
     },
     {
       id: 4,
       name: "Door Wiring harness",
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Qyd90zehwG93uzf83nllgvzV7NivHW.png",
-      realImage:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/front-harness-7XBJ24BU9gNElKnc1tAmW6FbzJSqVs.png",
+      nameKey: "doorCategory",
+      image: door_diagramm,
+      realImage: doors_actual,
       x: 50,
       y: 50,
       category: "Door Wiring harness",
       description: "Driver door harness for window, lock and mirror controls",
+      descriptionKey: "doorDescription",
     },
     {
       id: 5,
       name: "Front Bumper harness",
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-LGM2Hb7h4yp7FxAdIHgcJn1HSk0A0P.png",
-      realImage:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/front-harness-7XBJ24BU9gNElKnc1tAmW6FbzJSqVs.png",
+      nameKey: "frontBumperCategory",
+      image: front_bumper_diagramm,
+      realImage: front_bumper_actual,
       x: 85,
       y: 60,
       category: "Front Bumper harness",
       description: "Front bumper harness for sensors and lighting",
+      descriptionKey: "frontBumperDescription",
     },
     {
       id: 6,
       name: "Rear Bumper harness",
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-UWigGnHo8Y9nvN9NB7LTWrTQBALkyy.png",
-      realImage:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/front-harness-7XBJ24BU9gNElKnc1tAmW6FbzJSqVs.png",
+      nameKey: "rearBumperCategory",
+      image: rear_bumper_diagramm,
+      realImage: rear_bumper_actual,
       x: 18,
       y: 33,
       category: "Rear Bumper harness",
       description: "Rear bumper harness for parking sensors and lighting",
+      descriptionKey: "rearBumperDescription",
     },
   ];
 
-  // Set initial selected part
+  // Define the connections data with translation keys
+  const connectionsData = {
+    "Main Wiring harness": [
+      { code: "M05, GM04, GM01", descKey: "mainConn1" },
+      { code: "ICU-D, ICU-E", descKey: "mainConn2" },
+      { code: "M41, M31", descKey: "mainConn3" },
+    ],
+    "Front Wiring harness": [
+      { code: "JE31, E336, JE32", descKey: "frontConn1" },
+      { code: "ICU-A, ICU-B", descKey: "frontConn2" },
+      { code: "E/R Junction Block", descKey: "frontConn3" },
+    ],
+    "Floor Wiring harness": [
+      { code: "F16, F05-R, F37", descKey: "floorConn1" },
+      { code: "GF04, F14", descKey: "floorConn2" },
+      { code: "F28-B/F28-L", descKey: "floorConn3" },
+    ],
+    "Door Wiring harness": [
+      { code: "D02L", descKey: "doorConn1" },
+      { code: "D03A/B/C", descKey: "doorConn2" },
+      { code: "D08", descKey: "doorConn3" },
+      { code: "FD11", descKey: "doorConn4" },
+    ],
+    "Front Bumper harness": [
+      { code: "E50-CL/CR", descKey: "frontBumperConn1" },
+      { code: "E50-L/R", descKey: "frontBumperConn2" },
+      { code: "JE01", descKey: "frontBumperConn3" },
+      { code: "EE12", descKey: "frontBumperConn4" },
+    ],
+    "Rear Bumper harness": [
+      { code: "R21-L/R", descKey: "rearBumperConn1" },
+      { code: "R24-E", descKey: "rearBumperConn2" },
+      { code: "FR11", descKey: "rearBumperConn3" },
+    ],
+  };
+
   useEffect(() => {
     const initialPart = parts.find((part) => part.category === activeCategory);
     if (initialPart && !selectedPart) {
@@ -131,24 +181,55 @@ const CarPartsViewer = () => {
     setActiveCategory(part.category);
   };
 
-  // Get parts to display based on active category
   const visibleParts =
     activeCategory === "ALL"
       ? parts
       : parts.filter((part) => part.category === activeCategory);
+
+  // Helper function to get translated category name for display
+  const getCategoryDisplayName = (categoryId) => {
+    const category = categories.find((cat) => cat.id === categoryId);
+    return category ? t(category.translationKey) : categoryId;
+  };
+
+  // Render connections for the selected part
+  const renderConnections = () => {
+    if (!selectedPart) return null;
+
+    const connections = connectionsData[selectedPart.name];
+    if (!connections) return null;
+
+    return (
+      <div className="part-connections">
+        <h3>{t("keyConnections")}:</h3>
+        <ul>
+          {connections.map((conn, index) => (
+            <li key={index}>
+              <strong>{conn.code}:</strong> {t(conn.descKey)}
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  };
 
   return (
     <div className="car-parts-viewer container">
       <div className="category-tabs">
         {categories.map((category) => (
           <button
-            key={category}
+            key={category.id}
             className={`category-tab ${
-              activeCategory === category ? "active" : ""
+              activeCategory === category.id ? "active" : ""
             }`}
-            onClick={() => handleCategoryClick(category)}
+            onClick={() => handleCategoryClick(category.id)}
           >
-            {category.replace(" Wiring harness", "").replace(" harness", "")}
+            {t(category.translationKey).replace(
+              t("mainCategory").includes("Wiring")
+                ? " Wiring harness"
+                : " harness",
+              ""
+            )}
           </button>
         ))}
       </div>
@@ -174,11 +255,12 @@ const CarPartsViewer = () => {
                 onClick={() => handlePartClick(part)}
               >
                 <div className="hotspot-icon">+</div>
-                <div className="hotspot-label">{part.name.split(" ")[0]}</div>
+                <div className="hotspot-label">
+                  {t(part.nameKey).split(" ")[0]}
+                </div>
               </div>
             ))}
 
-            {/* Show connection lines and harness images for visible parts */}
             {visibleParts.map((part) => (
               <React.Fragment key={`line-${part.id}`}>
                 <svg className="connection-line">
@@ -193,7 +275,6 @@ const CarPartsViewer = () => {
                   />
                 </svg>
 
-                {/* Removed the !isMobile condition to show images on mobile */}
                 <div
                   className={`harness-images-container ${
                     isMobile ? "mobile" : ""
@@ -201,7 +282,7 @@ const CarPartsViewer = () => {
                   style={{
                     left: `${part.x - 20}%`,
                     top: `${part.y + 10}%`,
-                    // Add additional mobile positioning if needed
+
                     ...(isMobile && {
                       left: `${part.x - 15}%`,
                       top: `${part.y + 15}%`,
@@ -209,10 +290,10 @@ const CarPartsViewer = () => {
                   }}
                 >
                   <div className="harness-image real">
-                    <div className="image-label">Actual Part</div>
+                    <div className="image-label">{t("actualPart")}</div>
                     <img
                       src={part.realImage || "/placeholder.svg"}
-                      alt={`${part.name} Photo`}
+                      alt={`${t(part.nameKey)} Photo`}
                     />
                   </div>
                 </div>
@@ -224,116 +305,22 @@ const CarPartsViewer = () => {
         {selectedPart && (
           <div className="parts-details">
             <div className="part-detail-card">
-              <h2>{selectedPart.name}</h2>
+              <h2>{t(selectedPart.nameKey)}</h2>
 
               <div className="part-images">
                 <div className="part-image-container diagram">
-                  <h3>Technical Diagram</h3>
+                  <h3>{t("techDiagram")}</h3>
                   <img
                     src={selectedPart.image || "/placeholder.svg"}
-                    alt={`${selectedPart.name} Diagram`}
+                    alt={`${t(selectedPart.nameKey)} Diagram`}
                   />
                 </div>
               </div>
 
               {!isMobile && (
                 <div className="part-info">
-                  <p>{selectedPart.description}</p>
-                  <div className="part-connections">
-                    <h3>Key Connections:</h3>
-                    {selectedPart.name === "Main Wiring harness" && (
-                      <ul>
-                        <li>
-                          <strong>M05, GM04, GM01:</strong> Engine control
-                          connections
-                        </li>
-                        <li>
-                          <strong>ICU-D, ICU-E:</strong> Interior control unit
-                          connections
-                        </li>
-                        <li>
-                          <strong>M41, M31:</strong> Power distribution
-                          connections
-                        </li>
-                      </ul>
-                    )}
-                    {selectedPart.name === "Front Wiring harness" && (
-                      <ul>
-                        <li>
-                          <strong>JE31, E336, JE32:</strong> Engine sensor
-                          connections
-                        </li>
-                        <li>
-                          <strong>ICU-A, ICU-B:</strong> Control unit
-                          connections
-                        </li>
-                        <li>
-                          <strong>E/R Junction Block:</strong> Engine room
-                          junction connections
-                        </li>
-                      </ul>
-                    )}
-                    {selectedPart.name === "Floor Wiring harness" && (
-                      <ul>
-                        <li>
-                          <strong>F16, F05-R, F37:</strong> Floor sensor
-                          connections
-                        </li>
-                        <li>
-                          <strong>GF04, F14:</strong> Ground and power
-                          connections
-                        </li>
-                        <li>
-                          <strong>F28-B/F28-L:</strong> Seat control connections
-                        </li>
-                      </ul>
-                    )}
-                    {selectedPart.name === "Door Wiring harness" && (
-                      <ul>
-                        <li>
-                          <strong>D02L:</strong> Driver Door Lock Actuator
-                        </li>
-                        <li>
-                          <strong>D03A/B/C:</strong> Power Window Main Switch
-                        </li>
-                        <li>
-                          <strong>D08:</strong> Driver Smart Key Outside Handle
-                        </li>
-                        <li>
-                          <strong>FD11:</strong> Connection With FLOOR Harness
-                        </li>
-                      </ul>
-                    )}
-                    {selectedPart.name === "Front Bumper harness" && (
-                      <ul>
-                        <li>
-                          <strong>E50-CL/CR:</strong> Front PDW Sensor Center
-                        </li>
-                        <li>
-                          <strong>E50-L/R:</strong> Front PDW Sensor Left/Right
-                        </li>
-                        <li>
-                          <strong>JE01:</strong> Joint Connector
-                        </li>
-                        <li>
-                          <strong>EE12:</strong> Connection With Front Harness
-                        </li>
-                      </ul>
-                    )}
-                    {selectedPart.name === "Rear Bumper harness" && (
-                      <ul>
-                        <li>
-                          <strong>R21-L/R:</strong> Rear PDW Sensor Left/Right
-                        </li>
-                        <li>
-                          <strong>R24-E:</strong> Center Back-Up Lamp
-                        </li>
-                        <li>
-                          <strong>FR11:</strong> Connection With FLOOR Harness
-                        </li>
-                      </ul>
-                    )}
-                  </div>
+                  <p>{t(selectedPart.descriptionKey)}</p>
+                  {renderConnections()}
                 </div>
               )}
             </div>

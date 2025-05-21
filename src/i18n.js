@@ -51,6 +51,80 @@ i18n
           forecast_footer_note:
             "Bizning ustuvorligimiz – sifat, innovatsiya va ishonch asosida barqaror rivojlanish.",
 
+          mainCategory: "Asosiy elektr simi",
+          frontCategory: "Old elektr simi",
+          floorCategory: "Pol elektr simi",
+          doorCategory: "Eshik elektr simi",
+          frontBumperCategory: "Old bamper simi",
+          rearBumperCategory: "Orqa bamper simi",
+
+          mainDescription:
+            "Barcha asosiy elektr komponentlarini bog‘lovchi sim",
+          frontDescription: "Dvigatel va old elektr komponentlari uchun sim",
+          floorDescription: "Avtomobil tagidagi komponentlarni ulovchi sim",
+          doorDescription: "Deraza, qulf va oynalarni boshqaruvchi eshik simi",
+          frontBumperDescription:
+            "Sensor va yoritgichlar uchun old bamper simi",
+          rearBumperDescription:
+            "Park sensorlari va yoritgichlar uchun orqa bamper simi",
+
+          actualPart: "Asl detal",
+          techDiagram: "Texnik diagramma",
+          keyConnections: "Asosiy ulanishlar",
+
+          // Main Wiring harness connections
+          mainConn1: "Dvigatel boshqaruv ulanishlari",
+          mainConn2: "Ichki boshqaruv bloki ulanishlari",
+          mainConn3: "Elektr taqsimlash ulanishlari",
+
+          // Front Wiring harness connections
+          frontConn1: "Dvigatel sensor ulanishlari",
+          frontConn2: "Boshqaruv bloki ulanishlari",
+          frontConn3: "Dvigatel bo'limi ulanish bloki",
+
+          // Floor Wiring harness connections
+          floorConn1: "Pol sensor ulanishlari",
+          floorConn2: "Yerga ulash va quvvat ulanishlari",
+          floorConn3: "O'rindiq boshqaruv ulanishlari",
+
+          // Door Wiring harness connections
+          doorConn1: "Haydovchi eshigi qulf mexanizmi",
+          doorConn2: "Elektr oyna asosiy tugmasi",
+          doorConn3: "Haydovchi smart kalit tashqi dastagi",
+          doorConn4: "POL elektr simi bilan ulanish",
+
+          // Front Bumper harness connections
+          frontBumperConn1: "Old PDW sensor markazi",
+          frontBumperConn2: "Old PDW sensor chap/o'ng",
+          frontBumperConn3: "Ulanish konnektori",
+          frontBumperConn4: "Old elektr simi bilan ulanish",
+
+          // Rear Bumper harness connections
+          rearBumperConn1: "Orqa PDW sensor chap/o'ng",
+          rearBumperConn2: "Markaziy orqa chiroq",
+          rearBumperConn3: "POL elektr simi bilan ulanish",
+
+          viewDetails: "Batafsil",
+          keyConnections: "Asosiy ulanishlar",
+
+          // Product names
+          mainHarness: "Asosiy elektr simi",
+          frontHarness: "Old elektr simi",
+          doorHarness: "Eshik elektr simi",
+          bumperHarness: "Bamper elektr simi",
+          batteryHarness: "Akkumulyator elektr simi",
+
+          // Product descriptions
+          mainDescription:
+            "Barcha asosiy elektr komponentlarini bog'lovchi sim",
+          frontDescription: "Dvigatel va old elektr komponentlari uchun sim",
+          doorDescription: "Deraza, qulf va oynalarni boshqaruvchi eshik simi",
+          bumperDescription: "Sensor va yoritgichlar uchun old bamper simi",
+          batteryDescription:
+            "Park sensorlari va yoritgichlar uchun orqa bamper simi",
+          frontBumperHarness: "Old bamper simi",
+          rearBumperHarness: "Orqa bamper simi",
+          floorHarness: "Pol elektr simi",
           productionHighlights: {
             title: "Ishlab chiqarish yutuqlari",
             subtitle:
@@ -219,6 +293,84 @@ i18n
           forecast_footer_note:
             "Наш приоритет — устойчивое развитие, основанное на качестве, инновациях и доверии.",
 
+          mainCategory: "Основная электропроводка",
+          frontCategory: "Передняя электропроводка",
+          floorCategory: "Электропроводка пола",
+          doorCategory: "Электропроводка двери",
+          frontBumperCategory: "Проводка переднего бампера",
+          rearBumperCategory: "Проводка заднего бампера",
+
+          mainDescription:
+            "Основная проводка, соединяющая все основные электрические компоненты",
+          frontDescription:
+            "Передняя проводка для двигателя и передних компонентов",
+          floorDescription: "Проводка пола для подключения нижних компонентов",
+          doorDescription: "Проводка двери для окон, замков и зеркал",
+          frontBumperDescription:
+            "Проводка переднего бампера для датчиков и освещения",
+          rearBumperDescription:
+            "Проводка заднего бампера для парковочных датчиков и освещения",
+
+          actualPart: "Фактическая деталь",
+          techDiagram: "Техническая схема",
+          keyConnections: "Ключевые соединения",
+
+          // Main Wiring harness connections
+          mainConn1: "Соединения управления двигателем",
+          mainConn2: "Соединения внутреннего блока управления",
+          mainConn3: "Соединения распределения питания",
+
+          // Front Wiring harness connections
+          frontConn1: "Соединения датчиков двигателя",
+          frontConn2: "Соединения блока управления",
+          frontConn3: "Соединения блока моторного отсека",
+
+          // Floor Wiring harness connections
+          floorConn1: "Соединения датчиков пола",
+          floorConn2: "Соединения заземления и питания",
+          floorConn3: "Соединения управления сиденьем",
+
+          // Door Wiring harness connections
+          doorConn1: "Привод замка двери водителя",
+          doorConn2: "Главный переключатель стеклоподъемника",
+          doorConn3: "Внешняя ручка смарт-ключа водителя",
+          doorConn4: "Соединение с проводкой ПОЛА",
+
+          // Front Bumper harness connections
+          frontBumperConn1: "Центральный датчик PDW переднего бампера",
+          frontBumperConn2: "Левый/правый датчик PDW переднего бампера",
+          frontBumperConn3: "Соединительный разъем",
+          frontBumperConn4: "Соединение с передней проводкой",
+
+          // Rear Bumper harness connections
+          rearBumperConn1: "Левый/правый датчик PDW заднего бампера",
+          rearBumperConn2: "Центральный фонарь заднего хода",
+          rearBumperConn3: "Соединение с проводкой ПОЛА",
+
+          viewDetails: "Подробнее",
+          keyConnections: "Ключевые соединения",
+
+          // Product names
+          mainHarness: "Основная электропроводка",
+          frontHarness: "Передняя электропроводка",
+          doorHarness: "Электропроводка двери",
+          bumperHarness: "Проводка бампера",
+          batteryHarness: "Проводка аккумулятора",
+
+          // Product descriptions
+          mainDescription:
+            "Основная проводка, соединяющая все основные электрические компоненты",
+          frontDescription:
+            "Передняя проводка для двигателя и передних компонентов",
+          doorDescription: "Проводка двери для окон, замков и зеркал",
+          bumperDescription:
+            "Проводка переднего бампера для датчиков и освещения",
+          batteryDescription:
+            "Проводка заднего бампера для парковочных датчиков и освещения",
+
+          frontBumperHarness: "Проводка переднего бампера",
+          rearBumperHarness: "Проводка заднего бампера",
+          floorHarness: "Электропроводка пола",
           productionHighlights: {
             title: "Основные моменты производства",
             subtitle:
@@ -386,6 +538,89 @@ i18n
           forecast_footer_note:
             "Our priority is sustainable development based on quality, innovation, and trust.",
 
+          mainCategory: "Main Wiring harness",
+          frontCategory: "Front Wiring harness",
+          floorCategory: "Floor Wiring harness",
+          doorCategory: "Door Wiring harness",
+          frontBumperCategory: "Front Bumper harness",
+          rearBumperCategory: "Rear Bumper harness",
+
+          mainDescription:
+            "Main wiring harness connecting all major electrical components",
+          frontDescription:
+            "Front harness for engine and front electrical components",
+          floorDescription:
+            "Floor harness connecting underbody electrical components",
+          doorDescription:
+            "Driver door harness for window, lock and mirror controls",
+          frontBumperDescription:
+            "Front bumper harness for sensors and lighting",
+          rearBumperDescription:
+            "Rear bumper harness for parking sensors and lighting",
+
+          actualPart: "Actual Part",
+          techDiagram: "Technical Diagram",
+          keyConnections: "Key Connections",
+
+          // Main Wiring harness connections
+          mainConn1: "Engine control connections",
+          mainConn2: "Interior control unit connections",
+          mainConn3: "Power distribution connections",
+
+          // Front Wiring harness connections
+          frontConn1: "Engine sensor connections",
+          frontConn2: "Control unit connections",
+          frontConn3: "Engine room junction connections",
+
+          // Floor Wiring harness connections
+          floorConn1: "Floor sensor connections",
+          floorConn2: "Ground and power connections",
+          floorConn3: "Seat control connections",
+
+          // Door Wiring harness connections
+          doorConn1: "Driver Door Lock Actuator",
+          doorConn2: "Power Window Main Switch",
+          doorConn3: "Driver Smart Key Outside Handle",
+          doorConn4: "Connection With FLOOR Harness",
+
+          // Front Bumper harness connections
+          frontBumperConn1: "Front PDW Sensor Center",
+          frontBumperConn2: "Front PDW Sensor Left/Right",
+          frontBumperConn3: "Joint Connector",
+          frontBumperConn4: "Connection With Front Harness",
+
+          // Rear Bumper harness connections
+          rearBumperConn1: "Rear PDW Sensor Left/Right",
+          rearBumperConn2: "Center Back-Up Lamp",
+          rearBumperConn3: "Connection With FLOOR Harness",
+
+          viewDetails: "View Details",
+          keyConnections: "Key Connections",
+
+          viewDetails: "View Details",
+          keyConnections: "Key Connections",
+
+          // Product names
+          mainHarness: "Main Harness",
+          frontHarness: "Front Harness",
+          doorHarness: "Door Harness",
+          bumperHarness: "Bumper Harness",
+          batteryHarness: "Battery Harness",
+
+          // Product descriptions
+          mainDescription:
+            "Main wiring harness connecting all major electrical components",
+          frontDescription:
+            "Front harness for engine and front electrical components",
+          doorDescription:
+            "Driver door harness for window, lock and mirror controls",
+          bumperDescription: "Front bumper harness for sensors and lighting",
+          batteryDescription:
+            "Rear bumper harness for parking sensors and lighting",
+
+          frontBumperHarness: "Front Bumper Harness",
+          rearBumperHarness: "Rear Bumper Harness",
+          floorHarness: "Floor Harness",
           productionHighlights: {
             title: "Production Highlights",
             subtitle:

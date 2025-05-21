@@ -20,7 +20,7 @@ export const Company_structure = () => {
 
   const profileData = [
     {
-      image: Abduraxmon,
+      image: profileImage,
       name: "Yakubov Abduraxmon Sirojiddinovich",
       position: t("positions.ceo"),
       // phone: "+99897 445 48 11",
@@ -28,7 +28,7 @@ export const Company_structure = () => {
       schedule: `${t("schedule")}: Dushanba 09:00 - 11:00`,
     },
     {
-      image: Islomjon,
+      image: profileImage,
       name: "Islomjon Tuxtaboev Ikromjonovich",
       position: t("positions.deputy_production"),
       // phone: "+99894 409 11 28",
@@ -60,7 +60,7 @@ export const Company_structure = () => {
       schedule: `${t("schedule")}: Dushanba 09:00 - 11:00`,
     },
     {
-      image: Muslimbek,
+      image: profileImage,
       name: "Ne'matillayev Muslimbek Shuxratbek o'g'li",
       position: t("positions.chief_accountant"),
       // phone: "+99894 566 71 77",
@@ -76,7 +76,7 @@ export const Company_structure = () => {
       schedule: `${t("schedule")}: Dushanba 09:00 - 11:00`,
     },
     {
-      image: Xushnudbek,
+      image: profileImage,
       name: "Mamatqulov Xushnudbek Davlatbek o'g'li",
       position: t("positions.warehouse_head"),
       // phone: "+99895 044 78 88",
@@ -84,7 +84,7 @@ export const Company_structure = () => {
       schedule: `${t("schedule")}: Dushanba 09:00 - 11:00`,
     },
     {
-      image: Bekzod,
+      image: profileImage,
       name: "Abduraxmonov Bekzodbek Baxodir o'g'li",
       position: t("positions.quality_head"),
       // phone: "+99890 220 90 29",
@@ -100,7 +100,7 @@ export const Company_structure = () => {
       schedule: `${t("schedule")}: Dushanba 09:00 - 11:00`,
     },
     {
-      image: Murodiljon,
+      image: profileImage,
       name: "Xurboyev Mirodiljon Kodirjon o'g'li",
       position: t("positions.chief_technologist"),
       // phone: "+99897 581 60 00",
