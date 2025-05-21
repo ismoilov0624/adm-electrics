@@ -14,3 +14,42 @@
   object-fit: cover;
   display: block;
 }
+
+.test-mode-banner {
+  position: absolute;
+  top: 105px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(255, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  white-space: nowrap;
+
+  @media screen and (max-width: 500px) {
+    top: 10px;
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+
+.test-mode-banner::after {
+  content: "Veb sayt test rejimida ishlamoqda";
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+  padding-left: 100%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

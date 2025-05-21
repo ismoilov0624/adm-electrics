@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "react-slick";
 import "./home-banner.scss";
 import vid1 from "../../../../assets/video/vid1.mp4";
@@ -74,6 +73,7 @@ const settings = {
 export const HomeBanner = () => {
   return (
     <div className="home__banner">
+      <div className="test-mode-banner"></div>
       <Slider className="slider" {...settings}>
         <div className="slider__box">
           <video autoPlay muted loop className="slider__video" poster={slider1}>
