@@ -34,7 +34,7 @@ i18n
           growth: "O‘sish",
           growth_text: "20% o‘sish rejalashtirilgan",
           established: "Asos solingan sana: 02.06.2023",
-          area: "Maydoni: 15,000 m²",
+          area: "Maydoni: 9,280 m²",
           learn_more: "Biz haqimizda batafsil",
 
           forecast_title: "Yillik ishlab chiqarish prognozi",
@@ -276,7 +276,7 @@ i18n
           growth: "Рост",
           growth_text: "Планируется рост на 20%",
           established: "Основано: 02.06.2023",
-          area: "Площадь: 15,000 м²",
+          area: "Площадь: 9,280 м²",
           learn_more: "Узнать больше о нас",
 
           forecast_title: "Прогноз годового производства",
@@ -521,7 +521,7 @@ i18n
           growth: "Growth",
           growth_text: "20% increase planned",
           established: "Established: 02.06.2023",
-          area: "Area: 15,000 m²",
+          area: "Area: 9,280 m²",
           learn_more: "Learn More About Us",
 
           forecast_title: "Forecast of Annual Production",
