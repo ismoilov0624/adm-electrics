@@ -1,6 +1,6 @@
 import ochilish from "../../assets/images/news/ochilish.JPG";
 import footballImg from "../../assets/images/news/football.jpg";
-import award from "../../assets/images/news/awards.jpg";
+// import award from "../../assets/images/news/awards.jpg";
 import news4 from "../../assets/images/news/news4.webp";
 import news5 from "../../assets/images/news/news5.webp";
 import news6 from "../../assets/images/news/news6.webp";
@@ -21,7 +21,7 @@ export const newsDataUz = [
   },
   {
     id: 3,
-    img: award,
+    img: news4,
     title: "ADM ELECTRICS MChJ xodimlarini moddiy mukofotlash",
     text: "Har juma kuni kompaniya xodimlari uchun moliyaviy taqdirlash marosimi o‘tkaziladi. Bu mukofotlar ishda namuna bo‘layotgan va samaradorlik ko‘rsatgan xodimlarga beriladi. Taqdirlash jarayonida rahbariyat tomonidan samimiy tabriklar aytiladi va xodimlarning mehnatiga nisbatan minnatdorchilik bildiriladi. Bu jarayon xodimlarni yangi marralarni zabt etishga undaydi.",
   },
@@ -73,7 +73,7 @@ export const newsDataRu = [
   },
   {
     id: 3,
-    img: award,
+    img: news4,
     title: "Материальное поощрение сотрудников ООО “ADM ELECTRICS”",
     text: "Каждую пятницу проводится церемония материального поощрения сотрудников компании. Эти награды вручаются тем, кто проявил себя примером в работе и показал высокую эффективность.",
   },
@@ -125,7 +125,7 @@ export const newsDataEn = [
   },
   {
     id: 3,
-    img: award,
+    img: news4,
     title: "Monetary Rewards for Employees of “ADM ELECTRICS” LLC",
     text: "Every Friday, the company organizes a monetary reward ceremony for employees. These rewards are given to those who demonstrate exemplary performance and high productivity.",
   },
