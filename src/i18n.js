@@ -15,14 +15,14 @@ i18n
       uz: {
         translation: {
           home: "Bosh sahifa",
-          about: "Kompaniya haqida",
+          about: "Korxona haqida",
           company_structure: "Korxona boshqaruvi",
           news: "Yangiliklar",
           contact: "Kontaktlar",
           career: "Karyera",
           address: "Asaka district, Kamolot MFY, Marg'iloniy street, house 65",
 
-          about_title: "Kompaniyamiz haqida",
+          about_title: "Korxona haqida",
           text_1:
             "Sim to‘plamlarimiz ilg‘or texnologiyalar va qat’iy sifat standartlari asosida ishlab chiqariladi. Bu har bir mahsulotning ishonchliligi va uzoq xizmat muddatini ta'minlaydi.",
           text_2:
@@ -170,7 +170,7 @@ i18n
           allNews: "Barcha yangiliklar",
           aboutCompanyAlt: "Kompaniya sharhi",
           aboutCompanyTitleFull:
-            "“ADM ELECTRICS” MChJ avtomobil sanoatiga mo’ljallangan sim o’rovlarini ishlab chiqarishga ixtisoslashgan kompaniya hisoblanadi.",
+            "“ADM ELECTRICS” MChJ avtomobil sanoatiga mo’ljallangan sim o’rovlarini ishlab chiqarishga ixtisoslashgan korxona hisoblanadi.",
           aboutCompanyFullText:
             "Bizning mahsulotlarimiz “ADM Jizzakh” zavodida ishlab chiqariladigan KIA avtomobillarining tarkibiy qismidir. Bizning sim o’rovlari ilg’or texnologiyalar va qat’iy sifat standartlari asosida ishlab chiqariladi. Bu har bir mahsulotning yuqori ishonchliligi va uzoq umr ko’rishini ta’minlaydi. Har bir sim o’rovlar xalqaro va sanoat xavfsizlik hamda sifat standartlariga javob berishini kafolatlaydi. Biz texnologiyalarimizni doimiy ravishda yangilash va takomillashtirish orqali mijozlarimizga eng yaxshisini taqdim etishga intilamiz. Asosiy qadriyatlarimiz javobgarlik, sifat va mijozlarga yo’naltirilganlikdir. Korxonamiz jamoasi yuqori malakali mutaxassislar to’plamidan iborat bo’lib, ular o’z bilim va ko’nikmalarini doimiy ravishda oshirib borishadi. Biz kompaniyamiz muvaffaqiyatining asosi hisoblanadigan xodimlarimizdan faxrlanamiz. Biz hamkorlikka ochiqmiz va mijozlarimizga faqat eng yaxshi mahsulot va xizmatlarni taklif qilishga har doim tayyormiz.",
           strategicGoalsTitle: "Strategik maqsadlar",
@@ -207,7 +207,7 @@ i18n
             financial_manager: "Moliyaviy menedjer",
             chief_accountant: "Bosh Xisobchi",
             procurement_head: "Xarid bo'limi rahbari",
-            warehouse_head: "Ombor mudiri",
+            warehouse_head: "Ta'minot tizimi va materiallarni saqlash bo‘limi",
             quality_head: "Sifat nazorati bo'limi rahbari",
             maintenance_head:
               "Kommunal va texnik xizmat ko'rsatish bo'limi rahbari",
@@ -225,7 +225,7 @@ i18n
             socialMedia: "Ijtimoy tarmoqlar",
             links: {
               home: "Bosh sahifa",
-              about: "Kompaniya haqida",
+              about: "Korxona haqida",
               structure: "Korxona boshqaruvi",
               news: "Yangiliklar",
               career: "Karyera",
@@ -452,7 +452,7 @@ i18n
             financial_manager: "Финансовый менеджер",
             chief_accountant: "Главный бухгалтер",
             procurement_head: "Руководитель отдела закупок",
-            warehouse_head: "Заведующий складом",
+            warehouse_head: "Отдел системы снабжения и хранения материалов",
             quality_head: "Руководитель отдела контроля качества",
             maintenance_head:
               "Руководитель отдела коммунального и технического обслуживания",
@@ -701,7 +701,7 @@ i18n
             financial_manager: "Financial Manager",
             chief_accountant: "Chief Accountant",
             procurement_head: "Head of Procurement Department",
-            warehouse_head: "Warehouse Manager",
+            warehouse_head: "Supply System and Materials Storage Department",
             quality_head: "Head of Quality Control Department",
             maintenance_head:
               "Head of Maintenance and Technical Services Department",

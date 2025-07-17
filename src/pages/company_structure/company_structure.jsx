@@ -13,6 +13,7 @@ import Murodiljon from "../../assets/images/company-structure/murodiljon.jpg";
 import Muslimbek from "../../assets/images/company-structure/Muslimbek.jpg";
 import Valisher from "../../assets/images/company-structure/Valisher.jpg";
 import Xushnudbek from "../../assets/images/company-structure/Xushnudbek.jpg";
+import Dilyorbek from "../../assets/images/company-structure/Dilyorbek.jpg";
 
 export const Company_structure = () => {
   useScrollTop(0);
@@ -68,7 +69,7 @@ export const Company_structure = () => {
       schedule: `${t("schedule")}: Dushanba 09:00 - 11:00`,
     },
     {
-      image: profileImage,
+      image: Dilyorbek,
       name: "Voxobov Dilyorbek Voxidjon o'g'li",
       position: t("positions.procurement_head"),
       // phone: "+99894 566 71 77",
