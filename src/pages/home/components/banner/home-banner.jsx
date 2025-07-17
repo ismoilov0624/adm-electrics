@@ -74,7 +74,7 @@ const settings = {
 export const HomeBanner = () => {
   return (
     <div className="home__banner">
-      <div className="test-mode-banner"></div>
+      {/* <div className="test-mode-banner"></div> */}
       <Slider className="slider" {...settings}>
         <div className="slider__box">
           <video autoPlay muted loop className="slider__video" poster={slider1}>

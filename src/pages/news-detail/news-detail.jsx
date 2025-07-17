@@ -58,7 +58,10 @@ export const NewsDetail = () => {
               src={result.img}
               alt={result.title}
             />
-            <p className="news__detail__text">{result.text}</p>
+            <div
+              className="news__detail__text"
+              dangerouslySetInnerHTML={{ __html: result.text }}
+            />
           </div>
         ) : (
           <p className="news__not-found">{t("newsNotFound")}</p>
